@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     title: "Kamion s kranom Zagreb | Najam krana i dizanje tereta | Kranex prijevozi",
     description:
         "Kamion s kranom Zagreb – dizanje tereta, utovar i transport. Profesionalna kamionska dizalica, dolazak isti dan i sigurna usluga.",
+    alternates: { canonical: "/kamion-s-kranom-zagreb" },
 };
 
 const FAQ = [

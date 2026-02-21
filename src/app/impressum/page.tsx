@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Impressum – Kranex prijevozi",
     description: "Impressum i osnovni podaci Kranex prijevozi d.o.o.",
+    alternates: { canonical: "/impressum" },
 };
 
 const osobni = [

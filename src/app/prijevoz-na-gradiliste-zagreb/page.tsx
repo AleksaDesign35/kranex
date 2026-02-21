@@ -6,6 +6,7 @@ export const metadata: Metadata = {
     title: "Prijevoz na gradilište Zagreb – Direktno na lokaciju | Kranex prijevozi",
     description:
         "Prijevoz materijala direktno na gradilište u Zagrebu i okolici. Bez dodatne mehanizacije – kamion s kranom obavi utovar, transport i istovar. Kontaktirajte nas.",
+    alternates: { canonical: "/prijevoz-na-gradiliste-zagreb" },
 };
 
 export default function PrijevozNaGradilisteZagreb() {

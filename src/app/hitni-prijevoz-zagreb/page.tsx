@@ -6,6 +6,7 @@ export const metadata: Metadata = {
     title: "Hitni prijevoz Zagreb – Dolazak isti dan | Kranex prijevozi",
     description:
         "Hitni prijevoz građevinskog materijala i tereta u Zagrebu. Dolazak isti dan, fleksibilni termini. Kontaktirajte nas odmah za brzu ponudu.",
+    alternates: { canonical: "/hitni-prijevoz-zagreb" },
 };
 
 export default function HitniPrijevozZagreb() {

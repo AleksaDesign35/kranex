@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Pravila privatnosti – Kranex prijevozi",
     description: "Pravila privatnosti Kranex prijevozi d.o.o.",
+    alternates: { canonical: "/pravila-privatnosti" },
 };
 
 export default function PravilaPrivatnosti() {

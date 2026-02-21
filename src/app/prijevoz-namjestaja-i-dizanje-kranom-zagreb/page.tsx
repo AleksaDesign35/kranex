@@ -6,6 +6,7 @@ export const metadata: Metadata = {
     title: "Prijevoz namještaja i dizanje kranom Zagreb – Kranex prijevozi",
     description:
         "Siguran prijevoz namještaja uz mogućnost dizanja kranom na više katova ili teško dostupne lokacije. Idealno za selidbe, dostavu kuhinja i velikih komada namještaja u Zagrebu i okolici.",
+    alternates: { canonical: "/prijevoz-namjestaja-i-dizanje-kranom-zagreb" },
 };
 
 export default function PrijevozNamjestajaIDizanjeKranomZagreb() {

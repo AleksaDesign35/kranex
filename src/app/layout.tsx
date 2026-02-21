@@ -12,6 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 const BASE_URL = "https://kranexprijevozi.hr";
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://kranexprijevozi.hr"),
     icons: {
         icon: "/favicon/favicon.svg",
     },

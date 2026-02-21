@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     title: "Prijevoz građevinskog materijala Zagreb | Kamion s kranom | Kranex prijevozi",
     description:
         "Prijevoz građevinskog materijala u Zagrebu kamionom s kranom. Siguran transport, utovar i istovar direktno na gradilištu. Brza dostupnost i profesionalna usluga.",
+    alternates: { canonical: "/prijevoz-gradevinskog-materijala-zagreb" },
 };
 
 const FAQ = [
