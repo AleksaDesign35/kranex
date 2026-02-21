@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     metadataBase: new URL("https://kranexprijevozi.hr"),
     icons: {
         icon: "/favicon/favicon.svg",
+        apple: "/favicon/apple-touch-icon.png",
+        other: [
+            { rel: "icon", url: "/favicon/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+            { rel: "icon", url: "/favicon/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+        ],
     },
     manifest: "/favicon/site.webmanifest",
     title: "Kamion s kranom Zagreb | Prijevoz tereta i dizanje tereta | Kranex prijevozi",

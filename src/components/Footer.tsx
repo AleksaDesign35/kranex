@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Truck, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
+import { Phone, MapPin } from "lucide-react";
 import { KONTAKT } from "@/lib/constants";
 import InstagramIcon from "@/components/icons/InstagramIcon";
 
@@ -16,19 +17,15 @@ export default function Footer() {
         <footer className="bg-[#111828] py-12 text-white">
             <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                 <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-                    <div className="flex items-start gap-3">
-                        <Truck
-                            className="mt-1 h-8 w-8 shrink-0 text-primary"
-                            strokeWidth={2}
-                            aria-hidden
+                    <Link href="/" aria-label="Kranex prijevozi – početna" className="flex items-center">
+                        <Image
+                            src="/images/logo_white.svg"
+                            alt="Kranex prijevozi"
+                            width={280}
+                            height={96}
+                            className="h-20 w-auto md:h-[7.5rem]"
                         />
-                        <div>
-                            <h3 className="text-xl font-bold">Kranex prijevozi</h3>
-                            <p className="mt-1 text-base text-zinc-400">
-                                Profesionalne usluge dizalica i transporta
-                            </p>
-                        </div>
-                    </div>
+                    </Link>
 
                     <nav>
                         <h4 className="text-sm font-semibold uppercase tracking-wider text-zinc-300">
