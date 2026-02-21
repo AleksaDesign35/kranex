@@ -14,7 +14,7 @@ export default function PrijevozNamjestajaIDizanjeKranomZagreb() {
             <h1 className="text-4xl font-bold text-zinc-900">
                 Prijevoz namještaja i dizanje kranom Zagreb
             </h1>
-            <p className="mt-4 text-lg leading-relaxed text-zinc-700">
+            <p className="mt-4 text-base leading-relaxed text-zinc-700">
                 Kranex prijevozi nudi siguran prijevoz namještaja uz mogućnost dizanja
                 kranom na više katove ili teško dostupne lokacije. Naš{" "}
                 <Link href="/kamion-s-kranom-zagreb" className="font-medium text-primary hover:underline">

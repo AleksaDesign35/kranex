@@ -23,7 +23,7 @@ export default function Breadcrumbs() {
         aria-label="Put do stranice"
         className="border-b border-zinc-200 bg-zinc-50 px-4 pb-3 pt-20 md:pt-24 sm:px-6 lg:px-8"
       >
-        <div className="mx-auto flex max-w-[1280px] items-center gap-2 text-sm">
+        <div className="mx-auto flex max-w-[1280px] items-center gap-2 text-base">
           <Link
             href="/"
             className="text-zinc-600 transition hover:text-primary"

@@ -31,7 +31,7 @@ export default function PrijevozGradevinskogMaterijalaZagreb() {
                 Prijevoz građevinskog materijala Zagreb
             </h1>
 
-            <p className="mt-4 text-lg leading-relaxed text-zinc-700">
+            <p className="mt-4 text-base leading-relaxed text-zinc-700">
                 Kranex prijevozi pruža profesionalni prijevoz građevinskog materijala u
                 Zagrebu i okolici koristeći{" "}
                 <Link href="/kamion-s-kranom-zagreb" className="font-medium text-primary hover:underline">
@@ -42,7 +42,7 @@ export default function PrijevozGradevinskogMaterijalaZagreb() {
                 građevinskog materijala, montažnih elemenata i građevinske opreme za
                 privatne investitore, građevinske firme i poslovne korisnike.
             </p>
-            <p className="mt-4 text-lg leading-relaxed text-zinc-700">
+            <p className="mt-4 text-base leading-relaxed text-zinc-700">
                 Naša usluga prijevoza građevinskog materijala u Zagrebu omogućuje brzu i
                 sigurnu dostavu bez potrebe za dodatnom mehanizacijom jer kamionska
                 dizalica obavlja kompletan proces manipulacije teretom.

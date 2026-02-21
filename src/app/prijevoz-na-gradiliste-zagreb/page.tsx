@@ -14,7 +14,7 @@ export default function PrijevozNaGradilisteZagreb() {
             <h1 className="text-4xl font-bold text-zinc-900">
                 Prijevoz na gradilište Zagreb
             </h1>
-            <p className="mt-4 text-lg leading-relaxed text-zinc-700">
+            <p className="mt-4 text-base leading-relaxed text-zinc-700">
                 Kranex prijevozi nudi{" "}
                 <Link href="/prijevoz-gradevinskog-materijala-zagreb" className="font-medium text-primary hover:underline">
                     prijevoz građevinskog materijala Zagreb

@@ -14,7 +14,7 @@ export default function HitniPrijevozZagreb() {
             <h1 className="text-4xl font-bold text-zinc-900">
                 Hitni prijevoz Zagreb
             </h1>
-            <p className="mt-4 text-lg leading-relaxed text-zinc-700">
+            <p className="mt-4 text-base leading-relaxed text-zinc-700">
                 Trebate hitan prijevoz građevinskog materijala ili tereta u Zagrebu?
                 Kranex prijevozi nudi brzu uslugu – u većini slučajeva dolazak isti dan,
                 ovisno o dostupnosti. Brzo organiziramo{" "}

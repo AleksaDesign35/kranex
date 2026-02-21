@@ -130,7 +130,7 @@ export default function ContactForm() {
             <button
                 type="submit"
                 disabled={status === "loading"}
-                className="flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-8 py-4 text-lg font-medium text-white shadow-lg transition-all hover:-translate-y-0.5 hover:opacity-95 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                className="flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-8 py-4 text-base font-medium text-white shadow-lg transition-all hover:-translate-y-0.5 hover:opacity-95 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
             >
                 {status === "loading" ? "Šaljem..." : "Pošalji poruku"}
             </button>

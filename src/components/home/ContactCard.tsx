@@ -16,10 +16,10 @@ export default function ContactCard({
   external,
 }: Props) {
   const base =
-    "group rounded-2xl border-2 border-transparent bg-zinc-50 p-8 transition-colors hover:border-primary/20 hover:bg-primary/5 active:border-primary/20 active:bg-primary/5";
+    "group rounded-2xl border-2 border-transparent bg-zinc-50 p-5 transition-colors hover:border-primary/20 hover:bg-primary/5 active:border-primary/20 active:bg-primary/5";
   const content = (
     <>
-      <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-[#FFEDD4] transition-colors group-hover:bg-primary group-active:bg-primary">
+      <div className="mb-3 flex h-14 w-14 items-center justify-center rounded-xl bg-[#FFEDD4] transition-colors group-hover:bg-primary group-active:bg-primary">
         <Icon
           className="h-7 w-7 text-primary transition-colors group-hover:text-white group-active:text-white"
           strokeWidth={2}
@@ -27,8 +27,8 @@ export default function ContactCard({
         />
       </div>
       <h3 className="mb-2 text-xl font-bold text-zinc-900">{label}</h3>
-      <p className="text-zinc-600">{subtitle}</p>
-      <p className="mt-2 font-medium text-primary">{value}</p>
+      <p className="text-base text-zinc-600">{subtitle}</p>
+      <p className="mt-2 text-base font-medium text-primary">{value}</p>
     </>
   );
   if (external) {

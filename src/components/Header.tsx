@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 const nav = [
     { href: "/#usluge", label: "Usluge" },
     { href: "/#o-nama", label: "O nama" },
+    { href: "/#specifikacije", label: "Specifikacije" },
     { href: "/#galerija", label: "Galerija" },
 ];
 

@@ -7,13 +7,13 @@ import EmailContactCard from "./EmailContactCard";
 
 export default function KontaktSection() {
     return (
-        <section id="kontakt" className="scroll-mt-20 bg-white px-4 py-24 sm:px-6 lg:px-8">
+        <section id="kontakt" className="scroll-mt-20 bg-white px-4 py-12 sm:px-6 sm:py-14 lg:px-8">
             <div className="mx-auto max-w-[1280px]">
-                <div className="mb-16 text-center">
+                <div className="mb-16 text-left md:text-center">
                     <h2 className="mb-4 text-4xl font-bold text-zinc-900 md:text-5xl">
                         Kontaktirajte nas
                     </h2>
-                    <p className="text-xl text-zinc-600">
+                    <p className="text-base text-zinc-600">
                         Spremni ste za početak vašeg projekta? Kontaktirajte nas za
                         besplatnu ponudu.
                     </p>
@@ -52,11 +52,11 @@ export default function KontaktSection() {
                         external
                     />
                 </div>
-                <article className="mt-12 rounded-2xl bg-white p-8 shadow-lg md:p-12" aria-labelledby="contact-form-heading">
+                <article className="mt-6 rounded-2xl bg-white p-5 shadow-lg sm:mt-8 md:mt-12 md:p-6" aria-labelledby="contact-form-heading">
                     <h3 id="contact-form-heading" className="mb-2 text-3xl font-bold text-zinc-900">
                         Pošalji nam poruku
                     </h3>
-                    <p className="mb-8 text-zinc-600">
+                    <p className="mb-6 text-base text-zinc-600">
                         Ispunite obrazac i kontaktirat ćemo vas uskoro s ponudom
                         prilagođenom vašim potrebama.
                     </p>

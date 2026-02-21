@@ -3,6 +3,7 @@ import {
     UslugeSection,
     ZastoOdabratiSection,
     ONamaSection,
+    SpecifikacijeSection,
     GallerySection,
     FaqSection,
     KontaktSection,
@@ -15,6 +16,7 @@ export default function Home() {
             <UslugeSection />
             <ZastoOdabratiSection />
             <ONamaSection />
+            <SpecifikacijeSection />
             <GallerySection />
             <FaqSection />
             <KontaktSection />

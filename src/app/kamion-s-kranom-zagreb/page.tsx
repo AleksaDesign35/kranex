@@ -31,13 +31,13 @@ export default function KamionSKranomZagreb() {
                 Kamion s kranom Zagreb
             </h1>
 
-            <p className="mt-4 text-lg leading-relaxed text-zinc-700">
+            <p className="mt-4 text-base leading-relaxed text-zinc-700">
                 Kranex prijevozi nudi uslugu kamiona s kranom u Zagrebu za dizanje,
                 utovar i transport različitih vrsta tereta. Naša kamionska dizalica
                 omogućuje sigurno rukovanje teškim i glomaznim predmetima bez potrebe za
                 dodatnom mehanizacijom ili najmom zasebnog krana.
             </p>
-            <p className="mt-4 text-lg leading-relaxed text-zinc-700">
+            <p className="mt-4 text-base leading-relaxed text-zinc-700">
                 Usluga je idealna za gradilišta,{" "}
                 <Link href="/prijevoz-gradevinskog-materijala-zagreb" className="font-medium text-primary hover:underline">
                     prijevoz građevinskog materijala Zagreb

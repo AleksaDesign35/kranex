@@ -24,7 +24,7 @@ export default function Footer() {
                         />
                         <div>
                             <h3 className="text-xl font-bold">Kranex prijevozi</h3>
-                            <p className="mt-1 text-sm text-zinc-400">
+                            <p className="mt-1 text-base text-zinc-400">
                                 Profesionalne usluge dizalica i transporta
                             </p>
                         </div>
@@ -39,7 +39,7 @@ export default function Footer() {
                                 <li key={slug}>
                                     <Link
                                         href={`/${slug}`}
-                                        className="text-sm text-zinc-400 transition hover:text-white hover:underline"
+                                        className="text-base text-zinc-400 transition hover:text-white hover:underline"
                                     >
                                         {label}
                                     </Link>
@@ -56,7 +56,7 @@ export default function Footer() {
                             <li>
                                 <Link
                                     href={KONTAKT.telHref}
-                                    className="flex items-center gap-2 text-sm text-zinc-400 transition hover:text-white"
+                                    className="flex items-center gap-2 text-base text-zinc-400 transition hover:text-white"
                                 >
                                     <Phone className="h-4 w-4 shrink-0" strokeWidth={2} />
                                     {KONTAKT.telefon}
@@ -67,7 +67,7 @@ export default function Footer() {
                                     href={KONTAKT.mapsHref}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-start gap-2 text-sm text-zinc-400 transition hover:text-white"
+                                    className="flex items-start gap-2 text-base text-zinc-400 transition hover:text-white"
                                 >
                                     <MapPin className="mt-0.5 h-4 w-4 shrink-0" strokeWidth={2} />
                                     <span>{KONTAKT.adresa}</span>
@@ -78,7 +78,7 @@ export default function Footer() {
                                     href={KONTAKT.instagramHref}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 text-sm text-zinc-400 transition hover:text-white"
+                                    className="flex items-center gap-2 text-base text-zinc-400 transition hover:text-white"
                                     aria-label="Instagram"
                                 >
                                     <InstagramIcon className="h-4 w-4 shrink-0" strokeWidth={2} />
@@ -96,7 +96,7 @@ export default function Footer() {
                             <li>
                                 <Link
                                     href="/impressum"
-                                    className="text-sm text-zinc-400 transition hover:text-white hover:underline"
+                                    className="text-base text-zinc-400 transition hover:text-white hover:underline"
                                 >
                                     Impressum
                                 </Link>
@@ -106,7 +106,7 @@ export default function Footer() {
                 </div>
 
                 <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-zinc-800 pt-8 md:flex-row">
-                    <p className="text-sm text-zinc-500">
+                    <p className="text-base text-zinc-500">
                         © {new Date().getFullYear()} Kranex prijevozi. Sva prava pridržana.
                     </p>
                 </div>
