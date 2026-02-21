@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 const nav = [
     { href: "/#usluge", label: "Usluge" },
     { href: "/#o-nama", label: "O nama" },
+    { href: "/#galerija", label: "Galerija" },
 ];
 
 export default function Header() {

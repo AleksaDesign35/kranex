@@ -1,5 +1,6 @@
 import { Phone, Send, MapPin } from "lucide-react";
 import { KONTAKT } from "@/lib/constants";
+import InstagramIcon from "@/components/icons/InstagramIcon";
 import ContactCard from "./ContactCard";
 import ContactForm from "./ContactForm";
 import EmailContactCard from "./EmailContactCard";
@@ -40,6 +41,14 @@ export default function KontaktSection() {
                         subtitle="Pokrivamo cijelu Hrvatsku"
                         value={KONTAKT.adresa}
                         Icon={MapPin}
+                        external
+                    />
+                    <ContactCard
+                        href={KONTAKT.instagramHref}
+                        label="Instagram"
+                        subtitle="Pratite nas na Instagramu"
+                        value="@kranexprijevozi.hr"
+                        Icon={InstagramIcon}
                         external
                     />
                 </div>

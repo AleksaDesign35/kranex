@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
+import SubpageGallery from "@/components/SubpageGallery";
 
 export const metadata: Metadata = {
     title: "Prijevoz građevinskog materijala Zagreb | Kamion s kranom | Kranex prijevozi",
@@ -25,7 +26,7 @@ const FAQ = [
 
 export default function PrijevozGradevinskogMaterijalaZagreb() {
     return (
-        <main className="mx-auto max-w-3xl px-4 pb-16 pt-0 md:pt-10 sm:px-6 lg:px-8">
+        <main className="mx-auto max-w-3xl px-4 pb-16 pt-6 md:pt-10 sm:px-6 lg:px-8">
             <h1 className="text-4xl font-bold text-zinc-900">
                 Prijevoz građevinskog materijala Zagreb
             </h1>
@@ -156,7 +157,9 @@ export default function PrijevozGradevinskogMaterijalaZagreb() {
                 </ul>
             </section>
 
-            <section className="mt-10 space-y-4" aria-labelledby="faq-heading">
+            <SubpageGallery slug="prijevoz-gradevinskog-materijala-zagreb" />
+
+      <section className="mt-10 space-y-4" aria-labelledby="faq-heading">
                 <h2 id="faq-heading" className="text-2xl font-bold text-zinc-900">
                     Često postavljana pitanja
                 </h2>

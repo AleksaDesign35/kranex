@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SubpageGallery from "@/components/SubpageGallery";
 
 export const metadata: Metadata = {
     title: "Hitni prijevoz Zagreb – Dolazak isti dan | Kranex prijevozi",
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function HitniPrijevozZagreb() {
     return (
-        <main className="mx-auto max-w-3xl px-4 pb-16 pt-0 md:pt-10 sm:px-6 lg:px-8">
+        <main className="mx-auto max-w-3xl px-4 pb-16 pt-6 md:pt-10 sm:px-6 lg:px-8">
             <h1 className="text-4xl font-bold text-zinc-900">
                 Hitni prijevoz Zagreb
             </h1>
@@ -78,6 +79,9 @@ export default function HitniPrijevozZagreb() {
                 </p>
                 </section>
             </article>
+
+            <SubpageGallery slug="hitni-prijevoz-zagreb" />
+
             <aside aria-label="Poziv na akciju">
             <Link
                 href="/#kontakt"

@@ -1,11 +1,9 @@
-import type { LucideIcon } from "lucide-react";
-
 type Props = {
   href: string;
   label: string;
   subtitle: string;
   value: string;
-  Icon: LucideIcon;
+  Icon: React.ElementType;
   external?: boolean;
 };
 

@@ -46,7 +46,7 @@ function ListSection({
 
 export default function Impressum() {
     return (
-        <main className="mx-auto max-w-3xl px-4 pb-12 pt-0 md:pt-10 sm:px-6 lg:px-8">
+        <main className="mx-auto max-w-3xl px-4 pb-12 pt-6 md:pt-10 sm:px-6 lg:px-8">
             <article>
                 <h1 className="text-3xl font-bold text-zinc-900">Impressum</h1>
                 <p className="mt-2 text-zinc-600">Osnovni podaci o društvu</p>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Truck, Phone, MapPin } from "lucide-react";
 import { KONTAKT } from "@/lib/constants";
+import InstagramIcon from "@/components/icons/InstagramIcon";
 
 const FOOTER_USLUGE = [
     { slug: "kamion-s-kranom-zagreb", label: "Kamion s kranom" },
@@ -70,6 +71,18 @@ export default function Footer() {
                                 >
                                     <MapPin className="mt-0.5 h-4 w-4 shrink-0" strokeWidth={2} />
                                     <span>{KONTAKT.adresa}</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href={KONTAKT.instagramHref}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-2 text-sm text-zinc-400 transition hover:text-white"
+                                    aria-label="Instagram"
+                                >
+                                    <InstagramIcon className="h-4 w-4 shrink-0" strokeWidth={2} />
+                                    Instagram
                                 </Link>
                             </li>
                         </ul>
