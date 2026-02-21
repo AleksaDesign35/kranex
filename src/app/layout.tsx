@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     manifest: "/favicon/site.webmanifest",
     title: "Kamion s kranom Zagreb | Prijevoz tereta i dizanje tereta | Kranex prijevozi",
     description:
-        "Kamion s kranom Zagreb za prijevoz tereta, građevinskog materijala i dizanje tereta. Brz dolazak, siguran transport i fleksibilni termini. Kontaktirajte nas.",
+        "Kamion s kranom Zagreb za prijevoz tereta, građevinskog materijala i dizanje tereta. Brz dolazak, siguran transport i fleksibilni termini.",
     openGraph: {
         title: "Kamion s kranom Zagreb | Prijevoz tereta i dizanje tereta | Kranex prijevozi",
         description:
-            "Kamion s kranom Zagreb za prijevoz tereta, građevinskog materijala i dizanje tereta. Brz dolazak, siguran transport i fleksibilni termini. Kontaktirajte nas.",
+            "Kamion s kranom Zagreb za prijevoz tereta, građevinskog materijala i dizanje tereta. Brz dolazak, siguran transport i fleksibilni termini.",
         url: BASE_URL,
         images: [{ url: `${BASE_URL}/og-image.png`, width: 1200, height: 630 }],
     },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         card: "summary",
         title: "Kamion s kranom Zagreb | Prijevoz tereta i dizanje tereta | Kranex prijevozi",
         description:
-            "Kamion s kranom Zagreb za prijevoz tereta, građevinskog materijala i dizanje tereta. Brz dolazak, siguran transport i fleksibilni termini. Kontaktirajte nas.",
+            "Kamion s kranom Zagreb za prijevoz tereta, građevinskog materijala i dizanje tereta. Brz dolazak, siguran transport i fleksibilni termini.",
         images: [`${BASE_URL}/og-image.png`],
     },
 };
