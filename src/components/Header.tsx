@@ -2,18 +2,21 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const nav = [
     { href: "/#usluge", label: "Usluge" },
     { href: "/#o-nama", label: "O nama" },
-    { href: "/#kontakt", label: "Kontakt" },
 ];
 
 export default function Header() {
+    const pathname = usePathname();
+    const isHome = pathname === "/";
     const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const darkMode = !isHome || scrolled;
     useEffect(() => {
         document.body.style.overflow = open ? "hidden" : "";
         return () => {
@@ -28,13 +31,13 @@ export default function Header() {
     return (
         <>
             <header
-                className={`fixed top-0 z-40 flex w-full justify-between px-4 py-3 transition-all duration-300 sm:px-6 lg:px-8 xl:items-center xl:justify-around ${scrolled ? "bg-white shadow-sm" : "bg-transparent"
+                className={`fixed top-0 z-40 flex w-full justify-between px-4 py-3 transition-all duration-300 sm:px-6 lg:px-8 xl:items-center xl:justify-around ${darkMode ? "bg-white shadow-sm" : "bg-transparent"
                     }`}
             >
                 <div className="mx-auto flex w-full max-w-[1200px] items-center justify-between">
                     <Link href="/" aria-label="Početna" className="flex items-center">
                         <Image
-                            src={scrolled ? "/images/logo.svg" : "/images/logo_white.svg"}
+                            src={darkMode ? "/images/logo.svg" : "/images/logo_white.svg"}
                             alt="Kranex prijevozi"
                             width={140}
                             height={48}
@@ -42,13 +45,26 @@ export default function Header() {
                             priority
                         />
                     </Link>
-                    <nav className="max-xl:hidden">
-                        <ul className="flex items-center justify-center gap-4 font-bold">
+                    <nav className="max-xl:hidden flex items-center gap-6">
+                        <ul className="flex items-center justify-center gap-6 font-bold">
+                            {!isHome && (
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className={`transition ${darkMode
+                                                ? "text-zinc-700 hover:text-primary"
+                                                : "text-white/90 hover:text-white"
+                                            }`}
+                                    >
+                                        Početna
+                                    </Link>
+                                </li>
+                            )}
                             {nav.map(({ href, label }) => (
                                 <li key={href}>
                                     <Link
                                         href={href}
-                                        className={`transition ${scrolled
+                                        className={`transition ${darkMode
                                                 ? "text-zinc-700 hover:text-primary"
                                                 : "text-white/90 hover:text-white"
                                             }`}
@@ -58,6 +74,12 @@ export default function Header() {
                                 </li>
                             ))}
                         </ul>
+                        <Link
+                            href="/#kontakt"
+                            className="rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white transition hover:opacity-95"
+                        >
+                            Kontakt
+                        </Link>
                     </nav>
                     <button
                         type="button"
@@ -67,7 +89,7 @@ export default function Header() {
                         aria-label="Meni"
                     >
                         <Menu
-                            className={`h-7 w-7 ${scrolled ? "text-primary" : "text-white"}`}
+                            className={`h-7 w-7 ${darkMode ? "text-primary" : "text-white"}`}
                             strokeWidth={2}
                             aria-hidden
                         />
@@ -101,6 +123,15 @@ export default function Header() {
                         </button>
                     </div>
                     <nav className="flex flex-col px-6 py-4">
+                        {!isHome && (
+                            <Link
+                                href="/"
+                                className="border-b border-zinc-100 py-4 text-base font-medium text-zinc-900 hover:text-primary"
+                                onClick={() => setOpen(false)}
+                            >
+                                Početna
+                            </Link>
+                        )}
                         {nav.map(({ href, label }) => (
                             <Link
                                 key={href}
@@ -111,6 +142,13 @@ export default function Header() {
                                 {label}
                             </Link>
                         ))}
+                        <Link
+                            href="/#kontakt"
+                            className="mt-4 inline-flex w-fit justify-center rounded-lg bg-primary px-5 py-2.5 text-base font-semibold text-white hover:opacity-95"
+                            onClick={() => setOpen(false)}
+                        >
+                            Kontakt
+                        </Link>
                     </nav>
                 </aside>
             </div>

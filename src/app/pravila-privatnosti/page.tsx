@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function PravilaPrivatnosti() {
     return (
-        <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
+        <main className="mx-auto max-w-3xl px-4 pb-12 pt-0 md:pt-10 sm:px-6 lg:px-8">
             <h1 className="text-3xl font-bold text-zinc-900">Pravila privatnosti</h1>
 
             <section className="mt-8 space-y-6 text-zinc-700">
