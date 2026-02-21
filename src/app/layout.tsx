@@ -9,10 +9,26 @@ import { getOrganizationSchema } from "@/lib/schema";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const BASE_URL = "https://www.kranexprijevozi.hr";
+
 export const metadata: Metadata = {
     title: "Kamion s kranom Zagreb | Prijevoz tereta i dizanje tereta | Kranex prijevozi",
     description:
         "Kamion s kranom Zagreb za prijevoz tereta, građevinskog materijala i dizanje tereta. Brz dolazak, siguran transport i fleksibilni termini. Kontaktirajte nas.",
+    openGraph: {
+        title: "Kamion s kranom Zagreb | Prijevoz tereta i dizanje tereta | Kranex prijevozi",
+        description:
+            "Kamion s kranom Zagreb za prijevoz tereta, građevinskog materijala i dizanje tereta. Brz dolazak, siguran transport i fleksibilni termini. Kontaktirajte nas.",
+        url: BASE_URL,
+        images: [{ url: `${BASE_URL}/og-image.png`, width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary",
+        title: "Kamion s kranom Zagreb | Prijevoz tereta i dizanje tereta | Kranex prijevozi",
+        description:
+            "Kamion s kranom Zagreb za prijevoz tereta, građevinskog materijala i dizanje tereta. Brz dolazak, siguran transport i fleksibilni termini. Kontaktirajte nas.",
+        images: [`${BASE_URL}/og-image.png`],
+    },
 };
 
 export default function RootLayout({
