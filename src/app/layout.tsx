@@ -12,6 +12,10 @@ const inter = Inter({ subsets: ["latin"] });
 const BASE_URL = "https://kranexprijevozi.hr";
 
 export const metadata: Metadata = {
+    icons: {
+        icon: "/favicon/favicon.svg",
+    },
+    manifest: "/favicon/site.webmanifest",
     title: "Kamion s kranom Zagreb | Prijevoz tereta i dizanje tereta | Kranex prijevozi",
     description:
         "Kamion s kranom Zagreb za prijevoz tereta, građevinskog materijala i dizanje tereta. Brz dolazak, siguran transport i fleksibilni termini. Kontaktirajte nas.",
