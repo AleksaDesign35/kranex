@@ -45,7 +45,7 @@ export const KONTAKT = {
   telefon: "+385 (98) 426 326",
   telHref: "tel:+38598426326",
   whatsappHref: "https://wa.me/38598426326",
-  email: "info@kranexprijevozi.hr",
+  email: "kranexprijevozi@gmail.com",
   adresa: "Čulinečka cesta 246a, 10000 Zagreb",
   mapsHref: "https://maps.app.goo.gl/N4zqvyoZQcShjoKu9",
 } as const;

@@ -6,8 +6,8 @@ export default function HeroSection() {
         <section className="relative min-h-screen bg-zinc-900 ">
             <div className="absolute inset-0 linear-gradient-to-r from-primary to-[#c9451a]">
                 <Image
-                    src="/images/hero-truck.webp"
-                    alt=""
+                    src="/images/kamion-kran-zagreb-prijevoz-tereta.webp"
+                    alt="Kamion s kranom Zagreb – prijevoz tereta i dizanje tereta"
                     fill
                     className="object-cover max-md:object-[75%_center]"
                     sizes="100vw"
