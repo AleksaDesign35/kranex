@@ -8,9 +8,10 @@ export const metadata: Metadata = {
 export default function PravilaPrivatnosti() {
     return (
         <main className="mx-auto max-w-3xl px-4 pb-12 pt-0 md:pt-10 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold text-zinc-900">Pravila privatnosti</h1>
+            <article>
+                <h1 className="text-3xl font-bold text-zinc-900">Pravila privatnosti</h1>
 
-            <section className="mt-8 space-y-6 text-zinc-700">
+                <section className="mt-8 space-y-6 text-zinc-700">
                 <h2 className="text-xl font-semibold text-zinc-900">Uvod</h2>
                 <p>
                     Kranex prijevozi d.o.o. (dalje: Kranex) pridaje osobitu pažnju zaštiti
@@ -131,7 +132,8 @@ export default function PravilaPrivatnosti() {
                     koristimo kako bismo stupili u kontakt sa Vama i odgovorili na
                     postavljena pitanja.
                 </p>
-            </section>
+                </section>
+            </article>
         </main>
     );
 }

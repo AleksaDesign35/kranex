@@ -24,7 +24,8 @@ export default function PrijevozNaGradilisteZagreb() {
                 </Link>
                 {" "}omogućuje siguran utovar, transport i istovar bez potrebe za dodatnom mehanizacijom.
             </p>
-            <section className="mt-8 space-y-6 text-zinc-700 leading-relaxed">
+            <article className="mt-8 space-y-6 text-zinc-700 leading-relaxed">
+                <section>
                 <h2 className="text-xl font-semibold text-zinc-900">
                     Sve na jednom mjestu
                 </h2>
@@ -33,6 +34,8 @@ export default function PrijevozNaGradilisteZagreb() {
                     kamenolomu do preciznog istovara na gradilištu. Za vas to znači manje
                     organizacije, manje strojeva i brži napredak radova.
                 </p>
+                </section>
+                <section>
                 <h2 className="text-xl font-semibold text-zinc-900">
                     Pokrivamo Zagreb i okolicu
                 </h2>
@@ -41,6 +44,8 @@ export default function PrijevozNaGradilisteZagreb() {
                     kada je moguće, fleksibilni termini. Kontaktirajte nas za besplatnu
                     ponudu prilagođenu vašem projektu.
                 </p>
+                </section>
+                <section>
                 <h2 className="text-xl font-semibold text-zinc-900">
                     Organizirani prijevoz materijala direktno na gradilište
                 </h2>
@@ -55,6 +60,8 @@ export default function PrijevozNaGradilisteZagreb() {
                     poziciju na gradilištu, čime se ubrzava izvođenje radova i smanjuje
                     potreba za dodatnom opremom.
                 </p>
+                </section>
+                <section>
                 <h2 className="text-xl font-semibold text-zinc-900">
                     Kamion za gradilište Zagreb
                 </h2>
@@ -68,13 +75,16 @@ export default function PrijevozNaGradilisteZagreb() {
                     investitori koji trebaju pouzdan prijevoz materijala na gradilište u
                     Zagrebu i okolici.
                 </p>
-            </section>
+                </section>
+            </article>
+            <aside aria-label="Poziv na akciju">
             <Link
                 href="/#kontakt"
                 className="mt-10 inline-block rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:opacity-95"
             >
                 Kontaktirajte nas za ponudu
             </Link>
+            </aside>
         </main>
     );
 }

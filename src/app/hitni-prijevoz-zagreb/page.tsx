@@ -22,7 +22,8 @@ export default function HitniPrijevozZagreb() {
                 </Link>
                 {" "}kada je potrebno.
             </p>
-            <section className="mt-8 space-y-6 text-zinc-700 leading-relaxed">
+            <article className="mt-8 space-y-6 text-zinc-700 leading-relaxed">
+                <section>
                 <h2 className="text-xl font-semibold text-zinc-900">
                     Brz odziv, fleksibilnost
                 </h2>
@@ -32,6 +33,8 @@ export default function HitniPrijevozZagreb() {
                     prijevoz čim prije. Fleksibilni termini i iskusan vozač osiguravaju
                     da vaš materijal stigne na vrijeme.
                 </p>
+                </section>
+                <section>
                 <h2 className="text-xl font-semibold text-zinc-900">
                     Što prevozimo hitno?
                 </h2>
@@ -41,6 +44,8 @@ export default function HitniPrijevozZagreb() {
                     obavlja utovar i istovar direktno na lokaciji. Nazovite nas za
                     besplatnu i brzu ponudu.
                 </p>
+                </section>
+                <section>
                 <h2 className="text-xl font-semibold text-zinc-900">
                     Hitni prijevoz materijala isti dan
                 </h2>
@@ -53,6 +58,8 @@ export default function HitniPrijevozZagreb() {
                     Kamion s kranom omogućuje brzo rješenje jer obavlja utovar, transport
                     i istovar bez dodatne koordinacije više izvođača.
                 </p>
+                </section>
+                <section>
                 <h2 className="text-xl font-semibold text-zinc-900">
                     Kada koristiti hitni prijevoz?
                 </h2>
@@ -69,13 +76,16 @@ export default function HitniPrijevozZagreb() {
                     Brza dostupnost i fleksibilni termini omogućuju nastavak radova bez
                     zastoja.
                 </p>
-            </section>
+                </section>
+            </article>
+            <aside aria-label="Poziv na akciju">
             <Link
                 href="/#kontakt"
                 className="mt-10 inline-block rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:opacity-95"
             >
                 Kontaktirajte nas za hitnu ponudu
             </Link>
+            </aside>
         </main>
     );
 }

@@ -9,13 +9,13 @@ import {
 
 export default function Home() {
     return (
-        <>
+        <main>
             <HeroSection />
             <UslugeSection />
             <ZastoOdabratiSection />
             <ONamaSection />
             <FaqSection />
             <KontaktSection />
-        </>
+        </main>
     );
 }

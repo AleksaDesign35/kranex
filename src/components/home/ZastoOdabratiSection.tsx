@@ -17,7 +17,7 @@ export default function ZastoOdabratiSection() {
                 </h2>
                 <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
                     {PREDNOSTI_ZAGREB.map((text) => (
-                        <div
+                        <article
                             key={text}
                             className="flex items-center gap-4 rounded-2xl border-2 border-zinc-100 bg-white p-6 shadow-sm"
                         >
@@ -27,7 +27,7 @@ export default function ZastoOdabratiSection() {
                                 aria-hidden
                             />
                             <p className="font-medium text-zinc-800">{text}</p>
-                        </div>
+                        </article>
                     ))}
                 </div>
             </div>

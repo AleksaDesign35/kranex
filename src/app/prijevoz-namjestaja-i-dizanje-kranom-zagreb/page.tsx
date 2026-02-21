@@ -22,7 +22,8 @@ export default function PrijevozNamjestajaIDizanjeKranomZagreb() {
                 {" "}omogućuje precizan istovar bez oštećenja. Idealno za selidbe, dostavu
                 kuhinja i velikih komada namještaja u Zagrebu i okolici.
             </p>
-            <section className="mt-8 space-y-6 text-zinc-700 leading-relaxed">
+            <article className="mt-8 space-y-6 text-zinc-700 leading-relaxed">
+                <section>
                 <h2 className="text-xl font-semibold text-zinc-900">
                     Zašto kamion s kranom za namještaj?
                 </h2>
@@ -32,6 +33,8 @@ export default function PrijevozNamjestajaIDizanjeKranomZagreb() {
                     bez potrebe za ručnim nošenjem stepenicama. Štedi vrijeme i štiti
                     namještaj od oštećenja.
                 </p>
+                </section>
+                <section>
                 <h2 className="text-xl font-semibold text-zinc-900">
                     Selidbe i dostave
                 </h2>
@@ -40,6 +43,8 @@ export default function PrijevozNamjestajaIDizanjeKranomZagreb() {
                     Kontaktirajte nas za besplatnu ponudu – idealno za planirane selidbe,
                     dostavu nove kuhinje ili ostalih velikih komada namještaja.
                 </p>
+                </section>
+                <section>
                 <h2 className="text-xl font-semibold text-zinc-900">
                     Dizanje namještaja kranom u Zagrebu
                 </h2>
@@ -52,6 +57,8 @@ export default function PrijevozNamjestajaIDizanjeKranomZagreb() {
                     Kamionska dizalica omogućuje precizan istovar bez rizika od oštećenja
                     namještaja ili zidova.
                 </p>
+                </section>
+                <section>
                 <h2 className="text-xl font-semibold text-zinc-900">
                     Kada je potreban kamion s kranom za namještaj?
                 </h2>
@@ -68,13 +75,16 @@ export default function PrijevozNamjestajaIDizanjeKranomZagreb() {
                     Kamion s kranom značajno skraćuje vrijeme selidbe i povećava sigurnost
                     transporta.
                 </p>
-            </section>
+                </section>
+            </article>
+            <aside aria-label="Poziv na akciju">
             <Link
                 href="/#kontakt"
                 className="mt-10 inline-block rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:opacity-95"
             >
                 Kontaktirajte nas za ponudu
             </Link>
+            </aside>
         </main>
     );
 }

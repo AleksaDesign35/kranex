@@ -36,8 +36,8 @@ export default function FaqSection() {
                 </h2>
                 <div className="mx-auto mt-12 max-w-2xl space-y-4">
                     {FAQ.map(({ q, a }) => (
+                        <article key={q}>
                         <details
-                            key={q}
                             className="group rounded-2xl border-2 border-zinc-100 bg-zinc-50 transition-colors hover:border-primary/20 open:border-primary/20 open:bg-white"
                         >
                             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-4 font-semibold text-zinc-900 [&::-webkit-details-marker]:hidden">
@@ -48,6 +48,7 @@ export default function FaqSection() {
                                 {a}
                             </p>
                         </details>
+                        </article>
                     ))}
                 </div>
             </div>
