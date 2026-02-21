@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
                 name: "Kranex prijevozi",
                 email: KONTAKT.email,
             },
-            to: [{ email: KONTAKT.email, name: "Kranex prijevozi" }],
+            to: [{ email: KONTAKT.contactFormRecipient, name: "Kranex prijevozi" }],
             replyTo: { email: String(email), name: String(ime) },
             subject: `Kontakt forma: ${naslov || "Bez naslova"} – ${String(ime)}`,
             htmlContent,
