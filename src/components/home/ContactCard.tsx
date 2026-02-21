@@ -17,18 +17,20 @@ export default function ContactCard({
   Icon,
   external,
 }: Props) {
-  const className =
-    "flex items-start gap-4 rounded-lg border border-zinc-200 p-4 transition hover:border-primary/40 hover:bg-primary/5";
+  const base =
+    "group rounded-2xl border-2 border-transparent bg-zinc-50 p-8 transition-colors hover:border-primary/20 hover:bg-primary/5 active:border-primary/20 active:bg-primary/5";
   const content = (
     <>
-      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
-        <Icon className="h-5 w-5 text-primary" strokeWidth={2} />
+      <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-[#FFEDD4] transition-colors group-hover:bg-primary group-active:bg-primary">
+        <Icon
+          className="h-7 w-7 text-primary transition-colors group-hover:text-white group-active:text-white"
+          strokeWidth={2}
+          aria-hidden
+        />
       </div>
-      <div>
-        <p className="font-semibold text-zinc-900">{label}</p>
-        <p className="text-sm text-zinc-600">{subtitle}</p>
-        <p className="mt-1 font-medium text-primary">{value}</p>
-      </div>
+      <h3 className="mb-2 text-xl font-bold text-zinc-900">{label}</h3>
+      <p className="text-zinc-600">{subtitle}</p>
+      <p className="mt-2 font-medium text-primary">{value}</p>
     </>
   );
   if (external) {
@@ -37,15 +39,11 @@ export default function ContactCard({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={className}
+        className={base}
       >
         {content}
       </a>
     );
   }
-  return (
-    <a href={href} className={className}>
-      {content}
-    </a>
-  );
+  return <a href={href} className={base}>{content}</a>;
 }

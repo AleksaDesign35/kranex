@@ -1,26 +1,36 @@
 import Link from "next/link";
+import { Truck } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-200 bg-zinc-50">
-      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <p className="text-sm font-semibold text-zinc-900">Kranex prijevozi</p>
-          <p className="text-center text-sm text-zinc-600">
-            Profesionalne usluge dizalica i transporta
-          </p>
+    <footer className="bg-[#111828] py-12 text-white">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-between md:flex-row">
+          <div className="mb-4 flex items-center gap-3 md:mb-0">
+            <Truck
+              className="h-8 w-8 shrink-0 text-primary"
+              strokeWidth={2}
+              aria-hidden
+            />
+            <div>
+              <h3 className="text-xl font-bold">Kranex prijevozi</h3>
+              <p className="text-sm text-zinc-400">
+                Profesionalne usluge dizalica i transporta
+              </p>
+              <Link
+                href="/impressum"
+                className="text-sm text-zinc-400 hover:underline"
+              >
+                Impressum
+              </Link>
+            </div>
+          </div>
+          <div className="text-center md:text-right">
+            <p className="text-sm text-zinc-400">
+              © {new Date().getFullYear()} Kranex prijevozi. Sva prava pridržana.
+            </p>
+          </div>
         </div>
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-t border-zinc-200 pt-6">
-          <Link
-            href="/impressum"
-            className="text-sm text-zinc-600 hover:text-primary"
-          >
-            Impressum
-          </Link>
-        </div>
-        <p className="mt-4 text-center text-sm text-zinc-500">
-          © {new Date().getFullYear()} Kranex prijevozi. Sva prava pridržana.
-        </p>
       </div>
     </footer>
   );

@@ -5,7 +5,7 @@ import CtaCard from "./CtaCard";
 export default function UslugeSection() {
   return (
     <section id="usluge" className="scroll-mt-20 bg-white px-4 py-16 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-[1280px]">
         <h2 className="text-center text-2xl font-bold text-zinc-900 sm:text-3xl">
           Naše usluge
         </h2>

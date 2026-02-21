@@ -1,20 +1,9 @@
 export default function ContactForm() {
   return (
-    <div className="rounded-xl border border-zinc-200 bg-zinc-50/50 p-6">
-      <h3 className="text-lg font-semibold text-zinc-900">
-        Pošalji nam poruku
-      </h3>
-      <p className="mt-1 text-sm text-zinc-600">
-        Ispunite obrazac i kontaktirat ćemo vas uskoro s ponudom
-        prilagođenom vašim potrebama.
-      </p>
-      <form
-        action="#"
-        method="post"
-        className="mt-6 grid gap-4 sm:grid-cols-2"
-      >
-        <div className="sm:col-span-2">
-          <label htmlFor="ime" className="block text-sm font-medium text-zinc-700">
+    <form action="#" method="post" className="space-y-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div>
+          <label htmlFor="ime" className="mb-2 block text-sm font-medium text-zinc-900">
             Ime i prezime
           </label>
           <input
@@ -22,11 +11,12 @@ export default function ContactForm() {
             id="ime"
             name="ime"
             required
-            className="mt-1 block w-full rounded-lg border border-zinc-300 px-3 py-2 text-zinc-900 shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+            placeholder="Unesite vaše ime"
+            className="w-full rounded-lg border-2 border-zinc-200 px-4 py-3 transition-colors focus:border-primary focus:outline-none"
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-zinc-700">
+          <label htmlFor="email" className="mb-2 block text-sm font-medium text-zinc-900">
             Email
           </label>
           <input
@@ -34,52 +24,55 @@ export default function ContactForm() {
             id="email"
             name="email"
             required
-            className="mt-1 block w-full rounded-lg border border-zinc-300 px-3 py-2 text-zinc-900 shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+            placeholder="vasa@email.com"
+            className="w-full rounded-lg border-2 border-zinc-200 px-4 py-3 transition-colors focus:border-primary focus:outline-none"
           />
         </div>
         <div>
-          <label htmlFor="telefon" className="block text-sm font-medium text-zinc-700">
+          <label htmlFor="telefon" className="mb-2 block text-sm font-medium text-zinc-900">
             Telefon
           </label>
           <input
             type="tel"
             id="telefon"
             name="telefon"
-            className="mt-1 block w-full rounded-lg border border-zinc-300 px-3 py-2 text-zinc-900 shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+            placeholder="+385 (91) 234 5678"
+            className="w-full rounded-lg border-2 border-zinc-200 px-4 py-3 transition-colors focus:border-primary focus:outline-none"
           />
         </div>
-        <div className="sm:col-span-2">
-          <label htmlFor="naslov" className="block text-sm font-medium text-zinc-700">
+        <div>
+          <label htmlFor="naslov" className="mb-2 block text-sm font-medium text-zinc-900">
             Naslov
           </label>
           <input
             type="text"
             id="naslov"
             name="naslov"
-            className="mt-1 block w-full rounded-lg border border-zinc-300 px-3 py-2 text-zinc-900 shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-          />
-        </div>
-        <div className="sm:col-span-2">
-          <label htmlFor="poruka" className="block text-sm font-medium text-zinc-700">
-            Poruka
-          </label>
-          <textarea
-            id="poruka"
-            name="poruka"
-            rows={4}
             required
-            className="mt-1 block w-full rounded-lg border border-zinc-300 px-3 py-2 text-zinc-900 shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+            placeholder="Naslov poruke"
+            className="w-full rounded-lg border-2 border-zinc-200 px-4 py-3 transition-colors focus:border-primary focus:outline-none"
           />
         </div>
-        <div className="sm:col-span-2">
-          <button
-            type="submit"
-            className="w-full rounded-lg bg-primary px-4 py-3 font-semibold text-white shadow transition hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-          >
-            Pošalji poruku
-          </button>
-        </div>
-      </form>
-    </div>
+      </div>
+      <div>
+        <label htmlFor="poruka" className="mb-2 block text-sm font-medium text-zinc-900">
+          Poruka
+        </label>
+        <textarea
+          id="poruka"
+          name="poruka"
+          required
+          rows={5}
+          placeholder="Unesite vašu poruku..."
+          className="w-full resize-none rounded-lg border-2 border-zinc-200 px-4 py-3 transition-colors focus:border-primary focus:outline-none"
+        />
+      </div>
+      <button
+        type="submit"
+        className="flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-8 py-4 text-lg font-medium text-white shadow-lg transition-all hover:-translate-y-0.5 hover:opacity-95 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+      >
+        Pošalji poruku
+      </button>
+    </form>
   );
 }
