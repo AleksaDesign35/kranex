@@ -1,7 +1,8 @@
-import { Phone, Send, Mail, MapPin } from "lucide-react";
+import { Phone, Send, MapPin } from "lucide-react";
 import { KONTAKT } from "@/lib/constants";
 import ContactCard from "./ContactCard";
 import ContactForm from "./ContactForm";
+import EmailContactCard from "./EmailContactCard";
 
 export default function KontaktSection() {
   return (
@@ -32,13 +33,7 @@ export default function KontaktSection() {
             Icon={Send}
             external
           />
-          <ContactCard
-            href={`mailto:${KONTAKT.email}`}
-            label="Email"
-            subtitle="Pošaljite nam upit"
-            value={KONTAKT.email}
-            Icon={Mail}
-          />
+          <EmailContactCard />
           <ContactCard
             href={KONTAKT.mapsHref}
             label="Lokacija poslovnice"
