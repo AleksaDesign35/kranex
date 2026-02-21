@@ -1,4 +1,4 @@
-const BASE_URL = "https://www.kranexprijevozi.hr";
+const BASE_URL = "https://kranexprijevozi.hr";
 
 export const BREADCRUMB_LABELS: Record<string, string> = {
     "/impressum": "Impressum",

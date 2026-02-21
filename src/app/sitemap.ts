@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://www.kranexprijevozi.hr";
+const BASE_URL = "https://kranexprijevozi.hr";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     return [

@@ -126,7 +126,7 @@ export default function PravilaPrivatnosti() {
                     zaštite privatnosti.
                 </p>
                 <p>
-                    Ispunjavanjem forme za kontakt na stranici www.kranexprijevozi.hr
+                    Ispunjavanjem forme za kontakt na stranici kranexprijevozi.hr
                     pristajete da navedene podatke poput e-mail adrese ili broja telefona
                     koristimo kako bismo stupili u kontakt sa Vama i odgovorili na
                     postavljena pitanja.

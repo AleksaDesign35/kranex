@@ -15,7 +15,7 @@ export function getOrganizationSchema() {
             postalCode: "10000",
             addressCountry: "HR",
         },
-        url: "https://www.kranexprijevozi.hr",
+        url: "https://kranexprijevozi.hr",
         areaServed: {
             "@type": "GeoCircle",
             geoMidpoint: {

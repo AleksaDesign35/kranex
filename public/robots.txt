@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.kranexprijevozi.hr/sitemap.xml
+Sitemap: https://kranexprijevozi.hr/sitemap.xml

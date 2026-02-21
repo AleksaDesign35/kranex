@@ -9,7 +9,7 @@ import { getOrganizationSchema } from "@/lib/schema";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const BASE_URL = "https://www.kranexprijevozi.hr";
+const BASE_URL = "https://kranexprijevozi.hr";
 
 export const metadata: Metadata = {
     title: "Kamion s kranom Zagreb | Prijevoz tereta i dizanje tereta | Kranex prijevozi",
