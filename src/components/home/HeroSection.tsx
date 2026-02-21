@@ -14,7 +14,7 @@ export default function HeroSection() {
                     sizes="100vw"
                     priority
                 />
-                <div className="absolute inset-0 bg-black/90 max-md:bg-gradient-to-r max-md:from-black/80 max-md:via-black/60 max-md:to-transparent" />
+                <div className="absolute inset-0 bg-black/70 max-md:bg-gradient-to-r max-md:from-black/80 max-md:via-black/60 max-md:to-transparent" />
             </div>
             <div className="relative flex min-h-screen flex-col justify-center px-4 py-24 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-[1080px] text-left md:text-center">
