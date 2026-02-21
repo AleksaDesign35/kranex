@@ -11,7 +11,7 @@ import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
 import { GALLERY_IMAGES } from "@/lib/gallery-images";
 
-const INITIAL_COUNT = 6;
+const INITIAL_COUNT = 8;
 
 export default function GallerySection() {
     const [expanded, setExpanded] = useState(false);
