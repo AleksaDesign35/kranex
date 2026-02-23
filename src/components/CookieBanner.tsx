@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { getConsent, setConsent } from "@/lib/cookie-consent";
-import { loadGtag } from "@/lib/gtag";
+import { grantConsent, denyConsent } from "@/lib/gtag";
 
 export default function CookieBanner() {
     const [show, setShow] = useState(false);
@@ -15,19 +15,18 @@ export default function CookieBanner() {
 
     useEffect(() => {
         if (!mounted) return;
-        const consent = getConsent();
-        if (consent === null) setShow(true);
-        if (consent === "accepted") loadGtag();
+        if (getConsent() === null) setShow(true);
     }, [mounted]);
 
     const accept = () => {
         setConsent("accepted");
-        loadGtag();
+        grantConsent();
         setShow(false);
     };
 
     const reject = () => {
         setConsent("rejected");
+        denyConsent();
         setShow(false);
     };
 

@@ -1,17 +1,65 @@
 export const GA_MEASUREMENT_ID = "G-7X42SW798B";
 
-export function loadGtag() {
+const CONSENT_DENIED = {
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    analytics_storage: "denied",
+} as const;
+
+const CONSENT_GRANTED = {
+    ad_storage: "granted",
+    ad_user_data: "granted",
+    ad_personalization: "granted",
+    analytics_storage: "granted",
+} as const;
+
+declare global {
+    interface Window {
+        dataLayer: unknown[];
+        gtag: (...args: unknown[]) => void;
+    }
+}
+
+function getGtag(): Window["gtag"] | null {
+    if (typeof window === "undefined") return null;
+    return window.gtag ?? null;
+}
+
+export function initGtag(consentAccepted: boolean) {
     if (typeof window === "undefined") return;
     const id = GA_MEASUREMENT_ID;
+    window.dataLayer = window.dataLayer || [];
+    const gtag = function (...args: unknown[]) {
+        window.dataLayer.push(args);
+    };
+    window.gtag = gtag;
+    gtag("consent", "default", CONSENT_DENIED);
+    gtag("js", new Date());
+    gtag("config", id);
+    if (consentAccepted) gtag("consent", "update", CONSENT_GRANTED);
+}
+
+function loadGtagScript() {
+    if (typeof document === "undefined" || document.querySelector(`script[src*="googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}"]`)) return;
     const s = document.createElement("script");
     s.async = true;
-    s.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
+    s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
     document.head.appendChild(s);
-    (window as unknown as { dataLayer: unknown[] }).dataLayer = (window as unknown as { dataLayer?: unknown[] }).dataLayer || [];
-    const gtag = function (...args: unknown[]) {
-        ((window as unknown as { dataLayer: unknown[] }).dataLayer).push(args);
-    };
-    (window as unknown as { gtag: typeof gtag }).gtag = gtag;
-    (window as unknown as { gtag: typeof gtag }).gtag("js", new Date());
-    (window as unknown as { gtag: typeof gtag }).gtag("config", id);
+}
+
+export function initGtagWithScript(consentAccepted: boolean) {
+    if (typeof window === "undefined") return;
+    loadGtagScript();
+    initGtag(consentAccepted);
+}
+
+export function grantConsent() {
+    const gtag = getGtag();
+    if (gtag) gtag("consent", "update", CONSENT_GRANTED);
+}
+
+export function denyConsent() {
+    const gtag = getGtag();
+    if (gtag) gtag("consent", "update", CONSENT_DENIED);
 }

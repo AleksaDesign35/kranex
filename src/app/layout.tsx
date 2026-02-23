@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import MapSection from "@/components/MapSection";
 import FloatingCallButton from "@/components/FloatingCallButton";
 import CookieBanner from "@/components/CookieBanner";
+import GtagWithConsent from "@/components/GtagWithConsent";
 import { getOrganizationSchema } from "@/lib/schema";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -56,6 +57,7 @@ export default function RootLayout({
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
                 />
+                <GtagWithConsent />
                 <Header />
                 <Breadcrumbs />
                 {children}
