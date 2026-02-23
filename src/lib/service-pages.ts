@@ -1,6 +1,12 @@
-import { Package, Truck, MapPin, Zap, Armchair } from "lucide-react";
+import { Package, Truck, MapPin, Zap, Armchair, Boxes } from "lucide-react";
 
 export const SERVICE_PAGES = [
+    {
+        slug: "prijevoz-kamionom-zagreb",
+        title: "Prijevoz kamionom Zagreb",
+        description: "Profesionalni kamionski prijevoz u Zagrebu i okolici – transport robe, građevinskog materijala i teških tereta uz mogućnost utovara kranom.",
+        Icon: Boxes,
+    },
     {
         slug: "prijevoz-gradevinskog-materijala-zagreb",
         title: "Prijevoz građevinskog materijala",

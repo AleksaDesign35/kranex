@@ -6,6 +6,7 @@ import InstagramIcon from "@/components/icons/InstagramIcon";
 
 const FOOTER_USLUGE = [
     { slug: "kamion-s-kranom-zagreb", label: "Kamion s kranom" },
+    { slug: "prijevoz-kamionom-zagreb", label: "Prijevoz kamionom" },
     { slug: "prijevoz-gradevinskog-materijala-zagreb", label: "Prijevoz građevinskog materijala" },
     { slug: "prijevoz-na-gradiliste-zagreb", label: "Prijevoz na gradilište" },
     { slug: "hitni-prijevoz-zagreb", label: "Hitni prijevoz" },

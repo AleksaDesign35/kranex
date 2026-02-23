@@ -8,6 +8,7 @@ export const BREADCRUMB_LABELS: Record<string, string> = {
     "/prijevoz-na-gradiliste-zagreb": "Prijevoz na gradilište Zagreb",
     "/hitni-prijevoz-zagreb": "Hitni prijevoz Zagreb",
     "/prijevoz-namjestaja-i-dizanje-kranom-zagreb": "Prijevoz namještaja i dizanje kranom Zagreb",
+    "/prijevoz-kamionom-zagreb": "Prijevoz kamionom Zagreb",
 };
 
 export function getBreadcrumbSchema(pathname: string) {

@@ -51,4 +51,9 @@ export const SUBPAGE_IMAGES = {
         { src: `${BASE}/prijevoz-namjestaja-dizanje-kranom-zagreb-01.jpg`, alt: "Prijevoz namještaja i dizanje kranom Zagreb" },
         { src: `${BASE}/prijevoz-namjestaja-dizanje-kranom-zagreb-03.jpg`, alt: "Selidba namještaja kranom Zagreb – Kranex prijevozi" },
     ],
+    "prijevoz-kamionom-zagreb": [
+        { src: `${BASE}/kamion-kran-zagreb-dizanje-tereta-01.jpg`, alt: "Prijevoz kamionom Zagreb – kamion s kranom za transport tereta" },
+        { src: `${BASE}/prijevoz-gradevinskog-materijala-zagreb-01.jpg`, alt: "Kamionski prijevoz građevinskog materijala Zagreb" },
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-01.jpg`, alt: "Prijevoz kamionom na gradilište Zagreb" },
+    ],
 } as const;
