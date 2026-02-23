@@ -4,7 +4,7 @@ import { CircleCheckBig } from "lucide-react";
 const BULLETS = [
     "Dolazak isti dan",
     "Nosivost do 12 tona",
-    "Doseg krana 16 metara",
+    "Doseg krana 20 m",
     "Radimo Zagreb i okolicu",
 ] as const;
 

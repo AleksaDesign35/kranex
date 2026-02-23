@@ -19,19 +19,19 @@ const SPECIFIKACIJE = [
         Icon: Truck,
     },
     {
-        title: "Maksimalni doseg krana – do 16 metara",
+        title: "Maksimalni doseg krana – do 20 m",
         description:
             "Hidraulički kran omogućuje precizno dizanje tereta na veće udaljenosti i teško dostupne lokacije na gradilištu.",
         Icon: Ruler,
     },
     {
-        title: "Maksimalna visina dizanja – do 16 metara",
+        title: "Maksimalna visina dizanja – do 20 m",
         description:
             "Idealno za podizanje materijala na više katove stambenih i poslovnih objekata bez korištenja vanjskih dizalica.",
         Icon: ArrowUpFromLine,
     },
     {
-        title: "Dimenzije tovarnog prostora – cca 7 m × 2,45 m",
+        title: "Dimenzije tovarnog prostora – 6,20 m × 2,50 m",
         description:
             "Prostrana platforma omogućuje stabilan prijevoz dužih građevinskih elemenata i većih količina materijala.",
         Icon: Package,
@@ -74,7 +74,7 @@ export default function SpecifikacijeSection() {
                 </h2>
                 <p className="mt-4 max-w-3xl text-left text-base leading-relaxed text-zinc-600 md:mx-auto md:text-center">
                     Specifikacije našeg kamiona s kranom omogućuju prijevoz tereta do 12 tona te dizanje materijala
-                    na visinu i do 16 metara. Zahvaljujući snažnom hidrauličkom kranu i stabilnoj platformi, idealni
+                    na visinu i do 20 m. Zahvaljujući snažnom hidrauličkom kranu i stabilnoj platformi, idealni
                     smo za prijevoz građevinskog materijala i rad na gradilištima u Zagrebu i okolici.
                 </p>
                 <div className="mt-6 grid gap-6 sm:mt-8 sm:grid-cols-2 md:mt-12 lg:grid-cols-4">
