@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
+import MapSection from "@/components/MapSection";
 import FloatingCallButton from "@/components/FloatingCallButton";
 import { getOrganizationSchema } from "@/lib/schema";
 
@@ -57,6 +58,7 @@ export default function RootLayout({
                 <Header />
                 <Breadcrumbs />
                 {children}
+                <MapSection />
                 <Footer />
                 <FloatingCallButton />
             </body>

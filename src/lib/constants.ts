@@ -48,6 +48,6 @@ export const KONTAKT = {
   email: "info@kranexprijevozi.hr",
   contactFormRecipient: "kranexprijevozi@gmail.com",
   adresa: "Ulica Hrvatskog proljeća 47, 10000 Zagreb",
-  mapsHref: "https://maps.app.goo.gl/N4zqvyoZQcShjoKu9",
+  mapsHref: "https://www.google.com/maps/place/Kranex+Prijevozi+D.O.O./@45.8285243,16.0463458,17z/data=!3m1!4b1!4m6!3m5!1s0x47667938cf027e21:0xf65318fc7b08453d!8m2!3d45.8285206!4d16.0489207!16s%2Fg%2F11ykzc4pfn?entry=ttu",
   instagramHref: "https://www.instagram.com/kranexprijevozi.hr/",
 } as const;
