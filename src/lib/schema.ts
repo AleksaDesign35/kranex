@@ -5,7 +5,7 @@ const BASE_URL = "https://kranexprijevozi.hr";
 export function getOrganizationSchema() {
     return {
         "@context": "https://schema.org",
-        "@type": "TruckingCompany",
+        "@type": "LocalBusiness",
         "@id": `${BASE_URL}/#organization`,
         name: "Kranex Prijevozi D.O.O.",
         description: "Kamion s kranom Zagreb za prijevoz tereta, građevinskog materijala i dizanje tereta. Brz dolazak, siguran transport i fleksibilni termini.",
@@ -32,7 +32,7 @@ export function getOrganizationSchema() {
                 latitude: 45.815,
                 longitude: 15.9819,
             },
-            geoRadius: "50000",
+            geoRadius: 50000,
         },
         priceRange: "€€",
         aggregateRating: {
@@ -50,7 +50,7 @@ export function getOrganizationSchema() {
             },
             {
                 "@type": "OpeningHoursSpecification",
-                dayOfWeek: "Saturday",
+                dayOfWeek: ["Saturday"],
                 opens: "07:00",
                 closes: "14:00",
             },
