@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
 import MapSection from "@/components/MapSection";
 import FloatingCallButton from "@/components/FloatingCallButton";
+import CookieBanner from "@/components/CookieBanner";
 import { getOrganizationSchema } from "@/lib/schema";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -61,6 +62,7 @@ export default function RootLayout({
                 <MapSection />
                 <Footer />
                 <FloatingCallButton />
+                <CookieBanner />
             </body>
         </html>
     );
