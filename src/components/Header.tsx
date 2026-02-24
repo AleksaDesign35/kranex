@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 
 const navItems = (isHome: boolean) => [
     { href: "/usluge", label: "Usluge" },
+    { href: "/korisni-tekstovi", label: "Korisni tekstovi" },
     { href: "/#o-nama", label: "O nama" },
     { href: "/#specifikacije", label: "Specifikacije" },
     { href: "/#galerija", label: "Galerija" },

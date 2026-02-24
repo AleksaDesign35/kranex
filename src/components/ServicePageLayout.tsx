@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
 import SubpageGallery from "@/components/SubpageGallery";
+import FaqBlock from "@/components/FaqBlock";
 import type { SubpageGallerySlug } from "@/lib/gallery-images";
 
 export type ServicePageSection = {
@@ -93,25 +93,7 @@ export default function ServicePageLayout({
                 </Link>
             </aside>
             {faq.length > 0 && (
-            <section className="mt-12 space-y-4">
-                <h2 className="text-2xl font-bold text-zinc-900">{faqHeading}</h2>
-                <div className="space-y-4">
-                    {faq.map(({ q, a }) => (
-                        <details
-                            key={q}
-                            className="group rounded-2xl border-2 border-zinc-100 bg-zinc-50 transition-colors hover:border-primary/20 open:border-primary/20 open:bg-white"
-                        >
-                            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-3 font-semibold text-zinc-900 [&::-webkit-details-marker]:hidden">
-                                <span>{q}</span>
-                                <ChevronDown className="h-5 w-5 shrink-0 text-primary transition-transform group-open:rotate-180" strokeWidth={2} />
-                            </summary>
-                            <div className="border-t border-zinc-200 px-5 py-3 text-base text-zinc-600 [&_a]:font-medium [&_a]:text-primary [&_a]:hover:underline">
-                                {a}
-                            </div>
-                        </details>
-                    ))}
-                </div>
-            </section>
+                <FaqBlock heading={faqHeading} items={faq.map(({ q, a }) => ({ q, a }))} />
             )}
             <SubpageGallery slug={gallerySlug} />
         </main>

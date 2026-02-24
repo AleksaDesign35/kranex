@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronRight } from "lucide-react";
-import { getBreadcrumbLabel, getBreadcrumbSchema, isServicePage } from "@/lib/breadcrumbs";
+import { getBreadcrumbLabel, getBreadcrumbSchema, isServicePage, isKorisniTekstPage } from "@/lib/breadcrumbs";
 
 export default function Breadcrumbs() {
   const pathname = usePathname();
@@ -12,6 +12,7 @@ export default function Breadcrumbs() {
   if (!label) return null;
   const schema = getBreadcrumbSchema(pathname);
   const withUsluge = isServicePage(pathname);
+  const withKorisniTekst = isKorisniTekstPage(pathname);
   return (
     <>
       {schema && (
@@ -30,6 +31,12 @@ export default function Breadcrumbs() {
           {withUsluge && (
             <>
               <Link href="/usluge" className="text-zinc-600 transition hover:text-primary">Usluge</Link>
+              <ChevronRight className="h-4 w-4 shrink-0 text-zinc-400" strokeWidth={2} aria-hidden />
+            </>
+          )}
+          {withKorisniTekst && (
+            <>
+              <Link href="/korisni-tekstovi" className="text-zinc-600 transition hover:text-primary">Korisni tekstovi</Link>
               <ChevronRight className="h-4 w-4 shrink-0 text-zinc-400" strokeWidth={2} aria-hidden />
             </>
           )}

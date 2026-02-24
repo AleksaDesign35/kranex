@@ -43,6 +43,16 @@ export const BREADCRUMB_LABELS: Record<string, string> = {
     "/prijevoz-isti-dan-zagreb": "Prijevoz isti dan Zagreb",
     "/transport-paleta-robe-zagreb": "Transport paleta robe Zagreb",
     "/usluge": "Usluge",
+    "/korisni-tekstovi": "Korisni tekstovi",
+    "/korisni-tekstovi/americki-frizider-ne-stane": "Američki frižider ne stane",
+    "/korisni-tekstovi/dizanje-crijepa-na-krov": "Dizanje krovne građe",
+    "/korisni-tekstovi/dizanje-jacuzzija-na-krov": "Jacuzzi na krov",
+    "/korisni-tekstovi/dizanje-kuhinjskog-otoka-zagreb": "Kuhinjski otoci od kamena",
+    "/korisni-tekstovi/dizanje-masivnog-stola-na-kat": "Masivni stolovi (epoxy, puno drvo)",
+    "/korisni-tekstovi/dizanje-pvc-prozora-na-kat": "Zatvaranje lođe – podizanje prozora",
+    "/korisni-tekstovi/dizanje-staklene-stijene": "Staklene stijene",
+    "/korisni-tekstovi/dizanje-toplinske-pumpe-blog": "Toplinska pumpa",
+    "/korisni-tekstovi/dostava-plocica-na-kat-zagreb": "Dostava pločica bez lifta",
 };
 
 const IS_SERVICE_PAGE = new Set(
@@ -55,21 +65,35 @@ export function isServicePage(pathname: string): boolean {
     return IS_SERVICE_PAGE.has(pathname);
 }
 
+const KORISNI_TEKSTOVI_LIST = "/korisni-tekstovi";
+
+export function isKorisniTekstPage(pathname: string): boolean {
+    return pathname.startsWith(KORISNI_TEKSTOVI_LIST + "/") && pathname !== KORISNI_TEKSTOVI_LIST;
+}
+
 export function getBreadcrumbSchema(pathname: string) {
     if (pathname === "/") return null;
     const label = getBreadcrumbLabel(pathname);
     if (!label) return null;
     const isService = isServicePage(pathname);
-    const elements: { "@type": string; position: number; name: string; item: string }[] = isService
-        ? [
-            { "@type": "ListItem", position: 1, name: "Početna", item: `${BASE_URL}/` },
-            { "@type": "ListItem", position: 2, name: "Usluge", item: `${BASE_URL}/usluge` },
-            { "@type": "ListItem", position: 3, name: label, item: `${BASE_URL}${pathname}` },
-        ]
-        : [
-            { "@type": "ListItem", position: 1, name: "Početna", item: `${BASE_URL}/` },
-            { "@type": "ListItem", position: 2, name: label, item: `${BASE_URL}${pathname}` },
-        ];
+    const isKorisniTekst = isKorisniTekstPage(pathname);
+    const elements: { "@type": string; position: number; name: string; item: string }[] =
+        isService
+            ? [
+                { "@type": "ListItem", position: 1, name: "Početna", item: `${BASE_URL}/` },
+                { "@type": "ListItem", position: 2, name: "Usluge", item: `${BASE_URL}/usluge` },
+                { "@type": "ListItem", position: 3, name: label, item: `${BASE_URL}${pathname}` },
+            ]
+            : isKorisniTekst
+                ? [
+                    { "@type": "ListItem", position: 1, name: "Početna", item: `${BASE_URL}/` },
+                    { "@type": "ListItem", position: 2, name: "Korisni tekstovi", item: `${BASE_URL}${KORISNI_TEKSTOVI_LIST}` },
+                    { "@type": "ListItem", position: 3, name: label, item: `${BASE_URL}${pathname}` },
+                ]
+                : [
+                    { "@type": "ListItem", position: 1, name: "Početna", item: `${BASE_URL}/` },
+                    { "@type": "ListItem", position: 2, name: label, item: `${BASE_URL}${pathname}` },
+                ];
     return {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
