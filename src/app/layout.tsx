@@ -9,8 +9,17 @@ import FloatingCallButton from "@/components/FloatingCallButton";
 import CookieBanner from "@/components/CookieBanner";
 import GtagWithConsent from "@/components/GtagWithConsent";
 import { getOrganizationSchema } from "@/lib/schema";
+import { GA_MEASUREMENT_ID } from "@/lib/gtag";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const gtagInlineScript = `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied'});
+gtag('js', new Date());
+gtag('config', '${GA_MEASUREMENT_ID}');
+`;
 
 const BASE_URL = "https://kranexprijevozi.hr";
 
@@ -56,6 +65,13 @@ export default function RootLayout({
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+                />
+                <script
+                    dangerouslySetInnerHTML={{ __html: gtagInlineScript }}
+                />
+                <script
+                    async
+                    src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
                 />
                 <GtagWithConsent />
                 <Header />
