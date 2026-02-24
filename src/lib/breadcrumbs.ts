@@ -18,6 +18,17 @@ export const BREADCRUMB_LABELS: Record<string, string> = {
     "/selidba-teskih-stvari-zagreb": "Selidba teških stvari Zagreb",
     "/kamion-odmah-zagreb": "Kamion odmah Zagreb",
     "/kamion-dizalica-zagreb": "Kamion dizalica Zagreb",
+    "/dizanje-kroz-prozor-zagreb": "Dizanje kroz prozor Zagreb",
+    "/dizanje-paleta-na-kat-zagreb": "Dizanje paleta na kat Zagreb",
+    "/dizanje-preko-balkona-zagreb": "Dizanje preko balkona Zagreb",
+    "/dostava-materijala-na-kat-zagreb": "Dostava materijala na kat Zagreb",
+    "/istovar-bez-viljuskara-zagreb": "Istovar bez viljuškara Zagreb",
+    "/dizanje-agregata-kompresora-zagreb": "Dizanje agregata i kompresora Zagreb",
+    "/dizanje-klima-uredaja-vanjske-jedinice-zagreb": "Dizanje klima uređaja (vanjske jedinice) Zagreb",
+    "/dizanje-toplinske-pumpe-zagreb": "Dizanje toplinske pumpe Zagreb",
+    "/podizanje-sefova-zagreb": "Podizanje sefova Zagreb",
+    "/prijevoz-industrijske-opreme-zagreb": "Prijevoz industrijske opreme Zagreb",
+    "/prijevoz-strojeva-zagreb": "Prijevoz strojeva Zagreb",
 };
 
 export function getBreadcrumbSchema(pathname: string) {
