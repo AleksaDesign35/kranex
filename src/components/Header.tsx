@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const navItems = (isHome: boolean) => [
-    { href: isHome ? "/#usluge" : "/usluge", label: "Usluge" },
+    { href: "/usluge", label: "Usluge" },
     { href: "/#o-nama", label: "O nama" },
     { href: "/#specifikacije", label: "Specifikacije" },
     { href: "/#galerija", label: "Galerija" },

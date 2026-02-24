@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { SERVICE_PAGES } from "@/lib/service-pages";
 import ServiceLinkCard from "./ServiceLinkCard";
 import CtaCard from "./CtaCard";
@@ -20,6 +22,15 @@ export default function UslugeSection() {
                         />
                     ))}
                     <CtaCard />
+                </div>
+                <div className="mt-8 flex justify-center sm:mt-10 md:mt-12">
+                    <Link
+                        href="/usluge"
+                        className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:opacity-95"
+                    >
+                        Sve usluge
+                        <ArrowRight className="size-5" aria-hidden />
+                    </Link>
                 </div>
                 <p className="mt-6 max-w-3xl text-left text-base text-zinc-600 sm:mt-8 md:mx-auto md:mt-10 md:text-center">
                     Usluge prijevoza i dizanja tereta pružamo na području cijelog Zagreba
