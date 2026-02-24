@@ -3,6 +3,7 @@ title: Zatvaranje ulice Zagreb
 meta_title: Kako dobiti dozvolu za zatvaranje ulice u Zagrebu
 slug: dozvola-za-zatvaranje-ulice-zagreb
 date: "2023-11-01"
+published: false
 excerpt: Kako dobiti dozvolu za zatvaranje ulice u Zagrebu. Privremena regulacija prometa, rad s kranom u gradu i savjeti za podnošenje zahtjeva.
 keywords: [dozvola za zatvaranje ulice zagreb, rad s kranom u gradu dozvola, privremena regulacija prometa zagreb]
 ---

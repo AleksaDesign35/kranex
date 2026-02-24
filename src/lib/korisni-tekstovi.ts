@@ -13,6 +13,7 @@ export type KorisniTekstMeta = {
     image?: string;
     image_alt?: string;
     keywords?: string[];
+    published?: boolean;
 };
 
 export type KorisniTekst = {
@@ -26,10 +27,16 @@ function getSlugFromFilename(filename: string): string {
 
 export function getAllSlugs(): string[] {
     if (!fs.existsSync(CONTENT_DIR)) return [];
-    return fs
-        .readdirSync(CONTENT_DIR)
-        .filter((f) => f.endsWith(".md"))
-        .map(getSlugFromFilename);
+    const files = fs.readdirSync(CONTENT_DIR).filter((f) => f.endsWith(".md"));
+    const slugs: string[] = [];
+    for (const f of files) {
+        const slug = getSlugFromFilename(f);
+        const fullPath = path.join(CONTENT_DIR, f);
+        const raw = fs.readFileSync(fullPath, "utf-8");
+        const parsed = matter(raw);
+        if ((parsed.data as KorisniTekstMeta).published !== false) slugs.push(slug);
+    }
+    return slugs;
 }
 
 export function getTekst(slug: string): KorisniTekst | null {
@@ -49,6 +56,7 @@ export function getTekst(slug: string): KorisniTekst | null {
         data = parsed.data as KorisniTekstMeta;
         body = parsed.content.trim();
     }
+    if (data.published === false) return null;
     return { meta: data, content: body };
 }
 
