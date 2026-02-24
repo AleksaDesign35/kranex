@@ -1,9 +1,11 @@
 ---
 title: Toplinska pumpa
-meta_title: Dizanje Toplinske Pumpe u Zagrebu: Praktični Savjeti i Rješenja
+meta_title: "Dizanje Toplinske Pumpe u Zagrebu: Praktični Savjeti i Rješenja"
 slug: dizanje-toplinske-pumpe-blog
 date: "2023-11-01"
 excerpt: Kako sigurno podići vanjsku jedinicu toplinske pumpe na krov. Kamion s kranom, priprema i savjeti za montažu u Zagrebu.
+image: "/images/korisni-tekstovi/dizanje-toplinske-pumpe-blog.png"
+image_alt: "Kranex kamion s kranom diže toplinsku pumpu na terasu zgrade u Zagrebu"
 keywords: [dizanje toplinske pumpe zagreb, podizanje vanjske jedinice na krov, montaža dizalice topline kranom]
 ---
 

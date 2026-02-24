@@ -53,6 +53,8 @@ export const BREADCRUMB_LABELS: Record<string, string> = {
     "/korisni-tekstovi/dizanje-staklene-stijene": "Staklene stijene",
     "/korisni-tekstovi/dizanje-toplinske-pumpe-blog": "Toplinska pumpa",
     "/korisni-tekstovi/dostava-plocica-na-kat-zagreb": "Dostava pločica bez lifta",
+    "/korisni-tekstovi/dostava-solarnih-panela-na-krov": "Solarni paneli",
+    "/korisni-tekstovi/dozvola-za-zatvaranje-ulice-zagreb": "Zatvaranje ulice Zagreb",
 };
 
 const IS_SERVICE_PAGE = new Set(
