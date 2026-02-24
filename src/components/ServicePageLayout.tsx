@@ -18,7 +18,7 @@ type ServicePageLayoutProps = {
     intro: React.ReactNode;
     sections: ServicePageSection[];
     ctaTitle: string;
-    ctaSubtitle?: string;
+    ctaSubtitle?: React.ReactNode;
     ctaButtonText?: string;
     faqHeading: string;
     faq: ServicePageFaqItem[];
@@ -52,7 +52,7 @@ export default function ServicePageLayout({
             ))}
             <aside className="mt-12 rounded-2xl border border-primary/20 bg-primary/5 p-8" aria-label="Poziv na akciju">
                 <h2 className="text-2xl font-bold text-zinc-900">{ctaTitle}</h2>
-                <p className="mt-2 text-base leading-relaxed text-zinc-700">{ctaSubtitle}</p>
+                <div className="mt-2 text-base leading-relaxed text-zinc-700">{ctaSubtitle}</div>
                 <ul className="mt-4 space-y-2 text-base text-zinc-700">
                     <li>Nazovite nas</li>
                     <li>Pošaljite upit</li>

@@ -136,6 +136,71 @@ export const SUBPAGE_IMAGES = {
         { src: `${BASE}/kamion-kran-zagreb-dizanje-tereta-01.jpg`, alt: "Utovar strojeva dizalicom" },
         { src: `${BASE}/prijevoz-gradevinskog-materijala-zagreb-01.jpg`, alt: "Industrijski prijevoz strojeva" },
     ],
+    "dostava-drvene-grade-kranom-zagreb": [
+        { src: `${BASE}/prijevoz-gradevinskog-materijala-zagreb-01.jpg`, alt: "Dostava drvene građe kranom Zagreb" },
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-01.jpg`, alt: "Prijevoz drvene građe na gradilište" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Istovar drvene građe kranom" },
+    ],
+    "dostava-izolacije-kranom-zagreb": [
+        { src: `${BASE}/prijevoz-gradevinskog-materijala-zagreb-01.jpg`, alt: "Dostava izolacije kranom Zagreb" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Istovar izolacije kranom" },
+        { src: `${BASE}/kamion-kran-zagreb-dizanje-tereta-01.jpg`, alt: "Prijevoz izolacije kamionom s kranom" },
+    ],
+    "prijevoz-armature-i-zeljeza-zagreb": [
+        { src: `${BASE}/prijevoz-gradevinskog-materijala-zagreb-01.jpg`, alt: "Prijevoz armature i željeza Zagreb" },
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-04.jpg`, alt: "Istovar armature kranom" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Transport armature kranom" },
+    ],
+    "prijevoz-knauf-ploca-zagreb": [
+        { src: `${BASE}/prijevoz-gradevinskog-materijala-zagreb-01.jpg`, alt: "Prijevoz knauf ploča Zagreb" },
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-01.jpg`, alt: "Dostava knauf ploča na gradilište" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Istovar knaufa kranom" },
+    ],
+    "prijevoz-oplate-salunga-zagreb": [
+        { src: `${BASE}/prijevoz-gradevinskog-materijala-zagreb-01.jpg`, alt: "Prijevoz oplate Zagreb" },
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-01.jpg`, alt: "Transport oplate na gradilište" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Istovar oplate kranom" },
+    ],
+    "brzi-istovar-zagreb": [
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Brzi istovar Zagreb" },
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-04.jpg`, alt: "Istovar kranom na gradilištu" },
+        { src: `${BASE}/kamion-kran-zagreb-dizanje-tereta-01.jpg`, alt: "Istovar kranom" },
+    ],
+    "hitna-dostava-materijala-zagreb": [
+        { src: `${BASE}/hitni-prijevoz-zagreb-01.jpg`, alt: "Hitna dostava materijala Zagreb" },
+        { src: `${BASE}/prijevoz-gradevinskog-materijala-zagreb-01.jpg`, alt: "Hitan prijevoz građevinskog materijala" },
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-01.jpg`, alt: "Dostava isti dan" },
+    ],
+    "interventni-prijevoz-zagreb": [
+        { src: `${BASE}/hitni-prijevoz-zagreb-01.jpg`, alt: "Interventni prijevoz Zagreb" },
+        { src: `${BASE}/kamion-kran-zagreb-dizanje-tereta-01.jpg`, alt: "Brzi prijevoz kranom" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Hitni transport" },
+    ],
+    "logistika-gradilista-zagreb": [
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-01.jpg`, alt: "Logistika gradilišta Zagreb" },
+        { src: `${BASE}/prijevoz-gradevinskog-materijala-zagreb-01.jpg`, alt: "Opskrba gradilišta" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Doprema materijala" },
+    ],
+    "opskrba-gradilista-materijalom-zagreb": [
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-01.jpg`, alt: "Opskrba gradilišta materijalom Zagreb" },
+        { src: `${BASE}/prijevoz-gradevinskog-materijala-zagreb-01.jpg`, alt: "Redovne dostave" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Fazna doprema" },
+    ],
+    "preuzimanje-robe-iz-skladista-zagreb": [
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-01.jpg`, alt: "Preuzimanje robe iz skladišta Zagreb" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Dostava na gradilište" },
+        { src: `${BASE}/kamion-kran-zagreb-dizanje-tereta-01.jpg`, alt: "Prijevoz paletirane robe" },
+    ],
+    "prijevoz-isti-dan-zagreb": [
+        { src: `${BASE}/hitni-prijevoz-zagreb-01.jpg`, alt: "Prijevoz isti dan Zagreb" },
+        { src: `${BASE}/kamion-kran-zagreb-dizanje-tereta-01.jpg`, alt: "Brz prijevoz" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Dostava isti dan" },
+    ],
+    "transport-paleta-robe-zagreb": [
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-01.jpg`, alt: "Transport paleta Zagreb" },
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-04.jpg`, alt: "Dostava paletirane robe" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Istovar paleta kranom" },
+    ],
 } as const;
 
 export type SubpageGallerySlug = keyof typeof SUBPAGE_IMAGES;
