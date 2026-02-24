@@ -56,4 +56,31 @@ export const SUBPAGE_IMAGES = {
         { src: `${BASE}/prijevoz-gradevinskog-materijala-zagreb-01.jpg`, alt: "Kamionski prijevoz građevinskog materijala Zagreb" },
         { src: `${BASE}/prijevoz-na-gradiliste-zagreb-01.jpg`, alt: "Prijevoz kamionom na gradilište Zagreb" },
     ],
+    "dostava-cigle-ytonga-kranom-zagreb": [
+        { src: `${BASE}/prijevoz-gradevinskog-materijala-zagreb-01.jpg`, alt: "Dostava cigle i Ytonga kranom Zagreb" },
+        { src: `${BASE}/prijevoz-gradevinskog-materijala-zagreb-03.jpg`, alt: "Prijevoz cigle i blokova kranom Zagreb" },
+        { src: `${BASE}/kamion-kran-zagreb-dizanje-tereta-01.jpg`, alt: "Kamion s kranom za dostavu cigle Zagreb" },
+    ],
+    "istovar-materijala-na-gradilistu-zagreb": [
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-01.jpg`, alt: "Istovar materijala na gradilištu Zagreb" },
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-04.jpg`, alt: "Istovar kranom na gradilištu Zagreb" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Utovar i istovar kranom Zagreb" },
+    ],
+    "selidba-teskih-stvari-zagreb": [
+        { src: `${BASE}/prijevoz-namjestaja-dizanje-kranom-zagreb-01.jpg`, alt: "Selidba teških stvari Zagreb – dizanje kranom" },
+        { src: `${BASE}/prijevoz-namjestaja-dizanje-kranom-zagreb-03.jpg`, alt: "Prijevoz teških predmeta kranom Zagreb" },
+        { src: `${BASE}/kamion-kran-zagreb-dizanje-tereta-01.jpg`, alt: "Kamion s kranom za selidbu Zagreb" },
+    ],
+    "kamion-odmah-zagreb": [
+        { src: `${BASE}/hitni-prijevoz-zagreb-01.jpg`, alt: "Kamion odmah Zagreb – brzi prijevoz" },
+        { src: `${BASE}/kamion-kran-zagreb-dizanje-tereta-01.jpg`, alt: "Kamion s kranom – dolazak isti dan" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Brzi utovar i istovar kranom Zagreb" },
+    ],
+    "kamion-dizalica-zagreb": [
+        { src: `${BASE}/kamion-kran-zagreb-dizanje-tereta-01.jpg`, alt: "Kamion dizalica Zagreb" },
+        { src: `${BASE}/utovar-istovar-kranom-zagreb-01.jpg`, alt: "Kamionska dizalica – utovar i istovar" },
+        { src: `${BASE}/prijevoz-na-gradiliste-zagreb-01.jpg`, alt: "Usluga dizalice Zagreb" },
+    ],
 } as const;
+
+export type SubpageGallerySlug = keyof typeof SUBPAGE_IMAGES;

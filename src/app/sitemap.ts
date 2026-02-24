@@ -36,6 +36,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: `${BASE_URL}/prijevoz-kamionom-zagreb`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
+        {
+            url: `${BASE_URL}/dostava-cigle-ytonga-kranom-zagreb`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: `${BASE_URL}/istovar-materijala-na-gradilistu-zagreb`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: `${BASE_URL}/selidba-teskih-stvari-zagreb`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: `${BASE_URL}/kamion-odmah-zagreb`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: `${BASE_URL}/kamion-dizalica-zagreb`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
             url: `${BASE_URL}/impressum`,
             lastModified: new Date(),
             changeFrequency: "yearly",

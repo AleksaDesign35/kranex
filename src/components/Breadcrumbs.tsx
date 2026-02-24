@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronRight } from "lucide-react";
-import { BREADCRUMB_LABELS, getBreadcrumbSchema } from "@/lib/breadcrumbs";
+import { getBreadcrumbLabel, getBreadcrumbSchema } from "@/lib/breadcrumbs";
 
 export default function Breadcrumbs() {
   const pathname = usePathname();
   if (pathname === "/") return null;
-  const label = BREADCRUMB_LABELS[pathname];
+  const label = getBreadcrumbLabel(pathname);
   if (!label) return null;
   const schema = getBreadcrumbSchema(pathname);
   return (

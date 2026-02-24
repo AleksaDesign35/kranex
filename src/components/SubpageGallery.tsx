@@ -7,11 +7,9 @@ import lgThumbnail from "lightgallery/plugins/thumbnail";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
-import { SUBPAGE_IMAGES } from "@/lib/gallery-images";
+import { SUBPAGE_IMAGES, type SubpageGallerySlug } from "@/lib/gallery-images";
 
-type PageSlug = keyof typeof SUBPAGE_IMAGES;
-
-export default function SubpageGallery({ slug }: { slug: PageSlug }) {
+export default function SubpageGallery({ slug }: { slug: SubpageGallerySlug }) {
     const images = SUBPAGE_IMAGES[slug];
     if (!images) return null;
     return (

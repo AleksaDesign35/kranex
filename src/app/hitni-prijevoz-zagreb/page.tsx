@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import SubpageGallery from "@/components/SubpageGallery";
+import ServicePageLayout, { type ServicePageSection } from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
     title: "Hitni prijevoz Zagreb – Dolazak isti dan | Kranex prijevozi",
@@ -9,88 +9,67 @@ export const metadata: Metadata = {
     alternates: { canonical: "/hitni-prijevoz-zagreb" },
 };
 
-export default function HitniPrijevozZagreb() {
-    return (
-        <main className="mx-auto max-w-3xl px-4 pb-16 pt-6 md:pt-10 sm:px-6 lg:px-8">
-            <h1 className="text-4xl font-bold text-zinc-900">
-                Hitni prijevoz Zagreb
-            </h1>
-            <p className="mt-4 text-base leading-relaxed text-zinc-700">
-                Trebate hitan prijevoz građevinskog materijala ili tereta u Zagrebu?
-                Kranex prijevozi nudi brzu uslugu – u većini slučajeva dolazak isti dan,
-                ovisno o dostupnosti. Brzo organiziramo{" "}
-                <Link href="/prijevoz-na-gradiliste-zagreb" className="font-medium text-primary hover:underline">
-                    prijevoz na gradilište Zagreb
-                </Link>
-                {" "}kada je potrebno.
-            </p>
-            <article className="mt-8 space-y-6 text-zinc-700 leading-relaxed">
-                <section>
-                <h2 className="text-xl font-semibold text-zinc-900">
-                    Brz odziv, fleksibilnost
-                </h2>
-                <p>
-                    Razumijemo da gradilišta često zahtijevaju brzu reakciju. Zato
-                    nastojimo odgovoriti na upite u najkraćem mogućem roku i organizirati
-                    prijevoz čim prije. Fleksibilni termini i iskusan vozač osiguravaju
-                    da vaš materijal stigne na vrijeme.
-                </p>
-                </section>
-                <section>
-                <h2 className="text-xl font-semibold text-zinc-900">
-                    Što prevozimo hitno?
-                </h2>
-                <p>
-                    Građevinski materijal (pijesak, šljunak, cigla, beton), palete,
-                    metalne konstrukcije, građevinski alat i ostali teret. Kamion s kranom
-                    obavlja utovar i istovar direktno na lokaciji. Nazovite nas za
-                    besplatnu i brzu ponudu.
-                </p>
-                </section>
-                <section>
-                <h2 className="text-xl font-semibold text-zinc-900">
-                    Hitni prijevoz materijala isti dan
-                </h2>
-                <p>
-                    Gradilišta često zahtijevaju brzu reakciju kada nedostaje materijal
-                    ili oprema. Hitni prijevoz u Zagrebu omogućuje organizaciju transporta
-                    u kratkom roku, često isti dan, ovisno o dostupnosti.
-                </p>
-                <p>
-                    Kamion s kranom omogućuje brzo rješenje jer obavlja utovar, transport
-                    i istovar bez dodatne koordinacije više izvođača.
-                </p>
-                </section>
-                <section>
-                <h2 className="text-xl font-semibold text-zinc-900">
-                    Kada koristiti hitni prijevoz?
-                </h2>
-                <p>
-                    Hitni prijevoz koristi se kada:
-                </p>
-                <ul className="list-inside list-disc space-y-1 text-zinc-700">
+const intro = (
+    <>
+        <p>
+            Trebate hitan prijevoz građevinskog materijala ili tereta u Zagrebu? Kranex prijevozi nudi brzu uslugu – u većini slučajeva dolazak isti dan, ovisno o dostupnosti. Brzo organiziramo{" "}
+            <Link href="/prijevoz-na-gradiliste-zagreb" className="font-medium text-primary hover:underline">prijevoz na gradilište Zagreb</Link>
+            {" "}kada je potrebno.
+        </p>
+    </>
+);
+
+const sections: ServicePageSection[] = [
+    {
+        title: "Brz odziv, fleksibilnost",
+        children: (
+            <p>Razumijemo da gradilišta često zahtijevaju brzu reakciju. Zato nastojimo odgovoriti na upite u najkraćem mogućem roku i organizirati prijevoz čim prije. Fleksibilni termini i iskusan vozač osiguravaju da vaš materijal stigne na vrijeme.</p>
+        ),
+    },
+    {
+        title: "Što prevozimo hitno?",
+        children: (
+            <p>Građevinski materijal (pijesak, šljunak, cigla, beton), palete, metalne konstrukcije, građevinski alat i ostali teret. Kamion s kranom obavlja utovar i istovar direktno na lokaciji. Nazovite nas za besplatnu i brzu ponudu.</p>
+        ),
+    },
+    {
+        title: "Hitni prijevoz materijala isti dan",
+        children: (
+            <>
+                <p>Gradilišta često zahtijevaju brzu reakciju kada nedostaje materijal ili oprema. Hitni prijevoz u Zagrebu omogućuje organizaciju transporta u kratkom roku, često isti dan, ovisno o dostupnosti.</p>
+                <p>Kamion s kranom omogućuje brzo rješenje jer obavlja utovar, transport i istovar bez dodatne koordinacije više izvođača.</p>
+            </>
+        ),
+    },
+    {
+        title: "Kada koristiti hitni prijevoz?",
+        children: (
+            <>
+                <p>Hitni prijevoz koristi se kada:</p>
+                <ul>
                     <li>nedostaje građevinski materijal na gradilištu</li>
                     <li>potrebno je brzo premjestiti opremu</li>
                     <li>kasni isporuka dobavljača</li>
                     <li>potrebno je hitno dizanje tereta kranom</li>
                 </ul>
-                <p>
-                    Brza dostupnost i fleksibilni termini omogućuju nastavak radova bez
-                    zastoja.
-                </p>
-                </section>
-            </article>
+                <p>Brza dostupnost i fleksibilni termini omogućuju nastavak radova bez zastoja.</p>
+            </>
+        ),
+    },
+];
 
-            <SubpageGallery slug="hitni-prijevoz-zagreb" />
-
-            <aside aria-label="Poziv na akciju">
-            <Link
-                href="/#kontakt"
-                className="mt-10 inline-block rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:opacity-95"
-            >
-                Kontaktirajte nas za hitnu ponudu
-            </Link>
-            </aside>
-        </main>
+export default function HitniPrijevozZagreb() {
+    return (
+        <ServicePageLayout
+            title="Hitni prijevoz Zagreb"
+            intro={intro}
+            sections={sections}
+            ctaTitle="Trebate hitnu ponudu?"
+            ctaSubtitle="Kontaktirajte nas za hitnu ponudu."
+            ctaButtonText="Kontaktirajte nas za hitnu ponudu"
+            faqHeading="Često postavljana pitanja"
+            faq={[]}
+            gallerySlug="hitni-prijevoz-zagreb"
+        />
     );
 }
