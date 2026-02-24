@@ -58,3 +58,23 @@ export function getOrganizationSchema() {
         sameAs: [KONTAKT.instagramHref],
     };
 }
+
+export function getWebSiteSchema() {
+    return {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": `${BASE_URL}/#website`,
+        url: BASE_URL,
+        name: "Kranex prijevozi – kamion s kranom Zagreb",
+        description: "Prijevoz tereta i dizanje kranom u Zagrebu. Građevinski materijal, namještaj, hitni prijevoz i logistika gradilišta.",
+        publisher: { "@id": `${BASE_URL}/#organization` },
+        inLanguage: "hr-HR",
+    };
+}
+
+export function getSchemaGraph() {
+    return {
+        "@context": "https://schema.org",
+        "@graph": [getOrganizationSchema(), getWebSiteSchema()],
+    };
+}

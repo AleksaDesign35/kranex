@@ -42,16 +42,34 @@ export const BREADCRUMB_LABELS: Record<string, string> = {
     "/preuzimanje-robe-iz-skladista-zagreb": "Preuzimanje robe iz skladišta i dostava Zagreb",
     "/prijevoz-isti-dan-zagreb": "Prijevoz isti dan Zagreb",
     "/transport-paleta-robe-zagreb": "Transport paleta robe Zagreb",
+    "/usluge": "Usluge",
 };
+
+const IS_SERVICE_PAGE = new Set(
+    Object.keys(BREADCRUMB_LABELS).filter(
+        (p) => p !== "/impressum" && p !== "/pravila-privatnosti" && p !== "/usluge"
+    )
+);
+
+export function isServicePage(pathname: string): boolean {
+    return IS_SERVICE_PAGE.has(pathname);
+}
 
 export function getBreadcrumbSchema(pathname: string) {
     if (pathname === "/") return null;
     const label = getBreadcrumbLabel(pathname);
     if (!label) return null;
-    const elements: { "@type": string; position: number; name: string; item: string }[] = [
-        { "@type": "ListItem", position: 1, name: "Početna", item: `${BASE_URL}/` },
-        { "@type": "ListItem", position: 2, name: label, item: `${BASE_URL}${pathname}` },
-    ];
+    const isService = isServicePage(pathname);
+    const elements: { "@type": string; position: number; name: string; item: string }[] = isService
+        ? [
+            { "@type": "ListItem", position: 1, name: "Početna", item: `${BASE_URL}/` },
+            { "@type": "ListItem", position: 2, name: "Usluge", item: `${BASE_URL}/usluge` },
+            { "@type": "ListItem", position: 3, name: label, item: `${BASE_URL}${pathname}` },
+        ]
+        : [
+            { "@type": "ListItem", position: 1, name: "Početna", item: `${BASE_URL}/` },
+            { "@type": "ListItem", position: 2, name: label, item: `${BASE_URL}${pathname}` },
+        ];
     return {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",

@@ -132,11 +132,11 @@ const sections: ServicePageSection[] = [
 ];
 
 const faq = [
-    { q: "Kako brzo možete organizirati istovar?", a: <>Ovisno o dostupnosti, možemo organizirati <Link href="/hitni-prijevoz-zagreb" className="font-medium text-primary hover:underline">brzi istovar</Link> u istom danu.</> },
-    { q: "Koji su uvjeti za istovar na gradilištu?", a: "Potrebna je stabilna podloga i dovoljno prostora za manevar kamiona i krana." },
-    { q: "Možete li istovariti preko ograde?", a: <>Da, naš kran može izvesti <Link href="/kamion-s-kranom-zagreb" className="font-medium text-primary hover:underline">istovar preko ograde</Link> uz maksimalnu preciznost.</> },
-    { q: "Je li moguće istovariti palete bez viljuškara?", a: <>Da, <Link href="/istovar-bez-viljuskara-zagreb" className="font-medium text-primary hover:underline">istovar bez viljuškara</Link> je moguć uz naš hidraulički kran.</> },
-    { q: "Postoji li mogućnost hitnog prijevoza?", a: <>Da, nudimo <Link href="/hitni-prijevoz-zagreb" className="font-medium text-primary hover:underline">hitni prijevoz Zagreb</Link> prema dogovoru.</> },
+    { q: "Kako brzo možete organizirati istovar?", a: <>Ovisno o dostupnosti, možemo organizirati <Link href="/hitni-prijevoz-zagreb" className="font-medium text-primary hover:underline">brzi istovar</Link> u istom danu.</>, schemaAnswer: "Ovisno o dostupnosti, možemo organizirati brzi istovar u istom danu." },
+    { q: "Koji su uvjeti za istovar na gradilištu?", a: "Potrebna je stabilna podloga i dovoljno prostora za manevar kamiona i krana.", schemaAnswer: "Potrebna je stabilna podloga i dovoljno prostora za manevar kamiona i krana." },
+    { q: "Možete li istovariti preko ograde?", a: <>Da, naš kran može izvesti <Link href="/kamion-s-kranom-zagreb" className="font-medium text-primary hover:underline">istovar preko ograde</Link> uz maksimalnu preciznost.</>, schemaAnswer: "Da, naš kran može izvesti istovar preko ograde uz maksimalnu preciznost." },
+    { q: "Je li moguće istovariti palete bez viljuškara?", a: <>Da, <Link href="/istovar-bez-viljuskara-zagreb" className="font-medium text-primary hover:underline">istovar bez viljuškara</Link> je moguć uz naš hidraulički kran.</>, schemaAnswer: "Da, istovar bez viljuškara je moguć uz naš hidraulički kran." },
+    { q: "Postoji li mogućnost hitnog prijevoza?", a: <>Da, nudimo <Link href="/hitni-prijevoz-zagreb" className="font-medium text-primary hover:underline">hitni prijevoz Zagreb</Link> prema dogovoru.</>, schemaAnswer: "Da, nudimo hitni prijevoz Zagreb prema dogovoru." },
 ];
 
 export default function BrziIstovarZagreb() {
@@ -158,6 +158,7 @@ export default function BrziIstovarZagreb() {
             faqHeading="Često postavljana pitanja (FAQ)"
             faq={faq}
             gallerySlug="brzi-istovar-zagreb"
+            canonicalPath="/brzi-istovar-zagreb"
         />
     );
 }

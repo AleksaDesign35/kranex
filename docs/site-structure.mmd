@@ -1,0 +1,160 @@
+%% Kranex – struktura sajta (Mermaid)
+%% Svi čvorovi, hijerarhija, breadcrumb, hub→child, ServicePageLayout, interno linkanje
+
+graph TD
+    %% ========== ROOT I PRAVNE ==========
+    Home["/"]
+    Usluge["/usluge"]
+    Impressum["/impressum"]
+    Pravila["/pravila-privatnosti"]
+
+    %% ========== USLUGE – Prijevoz i dostava materijala ==========
+    PrijevozGrad["/prijevoz-gradevinskog-materijala-zagreb"]
+    PrijevozGradiliste["/prijevoz-na-gradiliste-zagreb"]
+    DostavaCigle["/dostava-cigle-ytonga-kranom-zagreb"]
+    DostavaDrvena["/dostava-drvene-grade-kranom-zagreb"]
+    DostavaIzolacije["/dostava-izolacije-kranom-zagreb"]
+    PrijevozArmatura["/prijevoz-armature-i-zeljeza-zagreb"]
+    PrijevozKnauf["/prijevoz-knauf-ploca-zagreb"]
+    PrijevozOplate["/prijevoz-oplate-salunga-zagreb"]
+    PrijevozKamionom["/prijevoz-kamionom-zagreb"]
+
+    %% ========== USLUGE – Dizanje i istovar ==========
+    KamionKran["/kamion-s-kranom-zagreb"]
+    IstovarGradiliste["/istovar-materijala-na-gradilistu-zagreb"]
+    IstovarBezViljuska["/istovar-bez-viljuskara-zagreb"]
+    DizanjePaleta["/dizanje-paleta-na-kat-zagreb"]
+    DizanjeProzor["/dizanje-kroz-prozor-zagreb"]
+    DizanjeBalkona["/dizanje-preko-balkona-zagreb"]
+    DostavaKat["/dostava-materijala-na-kat-zagreb"]
+    BrziIstovar["/brzi-istovar-zagreb"]
+
+    %% ========== USLUGE – Hitne i brze ==========
+    HitniPrijevoz["/hitni-prijevoz-zagreb"]
+    KamionOdmah["/kamion-odmah-zagreb"]
+    HitnaDostava["/hitna-dostava-materijala-zagreb"]
+    Interventni["/interventni-prijevoz-zagreb"]
+    PrijevozIstiDan["/prijevoz-isti-dan-zagreb"]
+
+    %% ========== USLUGE – Specijalizirani prijevoz i dizanje ==========
+    PrijevozNamjestaja["/prijevoz-namjestaja-i-dizanje-kranom-zagreb"]
+    SelidbaTeske["/selidba-teskih-stvari-zagreb"]
+    DizanjeAgregat["/dizanje-agregata-kompresora-zagreb"]
+    DizanjeKlima["/dizanje-klima-uredaja-vanjske-jedinice-zagreb"]
+    DizanjePumpa["/dizanje-toplinske-pumpe-zagreb"]
+    PodizanjeSefova["/podizanje-sefova-zagreb"]
+    PrijevozIndustrijska["/prijevoz-industrijske-opreme-zagreb"]
+    PrijevozStrojeva["/prijevoz-strojeva-zagreb"]
+    KamionDizalica["/kamion-dizalica-zagreb"]
+
+    %% ========== USLUGE – Logistika i opskrba ==========
+    Logistika["/logistika-gradilista-zagreb"]
+    Opskrba["/opskrba-gradilista-materijalom-zagreb"]
+    Preuzimanje["/preuzimanje-robe-iz-skladista-zagreb"]
+    TransportPaleta["/transport-paleta-robe-zagreb"]
+
+    %% ========== HIJERARHIJA: Home ==========
+    Home --> Usluge
+    Home --> Impressum
+    Home --> Pravila
+    Home --> PrijevozKamionom
+    Home --> PrijevozGrad
+    Home --> KamionKran
+    Home --> PrijevozGradiliste
+    Home --> HitniPrijevoz
+    Home --> PrijevozNamjestaja
+
+    %% ========== HUB → SVE STRANICE USLUGA (breadcrumb child) ==========
+    Usluge --> PrijevozGrad
+    Usluge --> KamionKran
+    Usluge --> PrijevozGradiliste
+    Usluge --> HitniPrijevoz
+    Usluge --> PrijevozNamjestaja
+    Usluge --> PrijevozKamionom
+    Usluge --> DostavaCigle
+    Usluge --> IstovarGradiliste
+    Usluge --> SelidbaTeske
+    Usluge --> KamionOdmah
+    Usluge --> KamionDizalica
+    Usluge --> DizanjeProzor
+    Usluge --> DizanjePaleta
+    Usluge --> DizanjeBalkona
+    Usluge --> DostavaKat
+    Usluge --> IstovarBezViljuska
+    Usluge --> DizanjeAgregat
+    Usluge --> DizanjeKlima
+    Usluge --> DizanjePumpa
+    Usluge --> PodizanjeSefova
+    Usluge --> PrijevozIndustrijska
+    Usluge --> PrijevozStrojeva
+    Usluge --> DostavaDrvena
+    Usluge --> DostavaIzolacije
+    Usluge --> PrijevozArmatura
+    Usluge --> PrijevozKnauf
+    Usluge --> PrijevozOplate
+    Usluge --> BrziIstovar
+    Usluge --> HitnaDostava
+    Usluge --> Interventni
+    Usluge --> Logistika
+    Usluge --> Opskrba
+    Usluge --> Preuzimanje
+    Usluge --> PrijevozIstiDan
+    Usluge --> TransportPaleta
+
+    %% ========== BREADCRUMB: 2 razine (Home → Impressum/Pravila/Usluge) ==========
+    %% Service stranice: Home → Usluge → [stranica] (već prikazano gore)
+
+    %% ========== FOOTER LINKOVI ==========
+    %% Footer: Home, Usluge, 6 usluga, Impressum – već pokriveno iznad
+
+    %% ========== INTERNO LINKANJE (značajni cross-linkovi iz sadržaja) ==========
+    BrziIstovar -.-> IstovarGradiliste
+    BrziIstovar -.-> IstovarBezViljuska
+    BrziIstovar -.-> KamionKran
+    BrziIstovar -.-> PrijevozGradiliste
+    BrziIstovar -.-> HitniPrijevoz
+    TransportPaleta -.-> PrijevozGradiliste
+    TransportPaleta -.-> PrijevozKamionom
+    TransportPaleta -.-> IstovarBezViljuska
+    TransportPaleta -.-> DizanjePaleta
+    TransportPaleta -.-> Preuzimanje
+    PrijevozIstiDan -.-> HitniPrijevoz
+    PrijevozIstiDan -.-> KamionKran
+    PrijevozIstiDan -.-> PrijevozKamionom
+    PrijevozIstiDan -.-> Interventni
+    PrijevozIstiDan -.-> KamionOdmah
+    Preuzimanje -.-> PrijevozKamionom
+    Preuzimanje -.-> PrijevozGradiliste
+    Preuzimanje -.-> KamionKran
+    Preuzimanje -.-> IstovarBezViljuska
+    Preuzimanje -.-> HitniPrijevoz
+    Preuzimanje -.-> KamionOdmah
+    Opskrba -.-> PrijevozGrad
+    Opskrba -.-> PrijevozGradiliste
+    Opskrba -.-> Logistika
+    Opskrba -.-> DostavaKat
+    Opskrba -.-> HitniPrijevoz
+    Logistika -.-> PrijevozGradiliste
+    Logistika -.-> IstovarGradiliste
+    Logistika -.-> PrijevozGrad
+    Logistika -.-> KamionKran
+    Logistika -.-> HitniPrijevoz
+    Impressum -.-> KamionKran
+    Impressum -.-> PrijevozGrad
+    Impressum -.-> IstovarGradiliste
+
+    %% ========== SERVICEPAGELAYOUT ==========
+    subgraph ServicePageLayout["ServicePageLayout – 36 stranica"]
+        direction TB
+        SP1["intro, sections, FAQ, CTA, SubpageGallery"]
+        SP2["Sve stranice osim: /, /usluge, /impressum, /pravila-privatnosti"]
+    end
+
+    %% ========== LEGENDA ==========
+    subgraph Legenda[" "]
+        direction TB
+        L1["---→ hijerarhija / navigacija"]
+        L2["-.-→ interno linkanje u sadržaju"]
+        L3["Breadcrumb: Home → Usluge → svaka od 36 usluga"]
+        L4["Breadcrumb: Home → Usluge | Home → Impressum | Home → Pravila"]
+    end

@@ -8,7 +8,7 @@ import MapSection from "@/components/MapSection";
 import FloatingCallButton from "@/components/FloatingCallButton";
 import CookieBanner from "@/components/CookieBanner";
 import GtagWithConsent from "@/components/GtagWithConsent";
-import { getOrganizationSchema } from "@/lib/schema";
+import { getSchemaGraph } from "@/lib/schema";
 import { GA_MEASUREMENT_ID } from "@/lib/gtag";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -58,7 +58,7 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    const schema = getOrganizationSchema();
+    const schema = getSchemaGraph();
     return (
         <html lang="hr">
             <body className={`${inter.className} min-h-screen bg-white text-zinc-900 antialiased`}>

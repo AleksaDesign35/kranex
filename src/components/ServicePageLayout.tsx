@@ -11,7 +11,10 @@ export type ServicePageSection = {
 export type ServicePageFaqItem = {
     q: string;
     a: React.ReactNode;
+    schemaAnswer?: string;
 };
+
+const BASE_URL = "https://kranexprijevozi.hr";
 
 type ServicePageLayoutProps = {
     title: string;
@@ -23,7 +26,23 @@ type ServicePageLayoutProps = {
     faqHeading: string;
     faq: ServicePageFaqItem[];
     gallerySlug: SubpageGallerySlug;
+    canonicalPath?: string;
 };
+
+function getFaqSchema(faq: ServicePageFaqItem[], canonicalPath: string) {
+    const items = faq.filter((item) => item.schemaAnswer != null);
+    if (items.length === 0) return null;
+    return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: items.map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: { "@type": "Answer", text: item.schemaAnswer },
+        })),
+        url: `${BASE_URL}${canonicalPath}`,
+    };
+}
 
 export default function ServicePageLayout({
     title,
@@ -35,9 +54,17 @@ export default function ServicePageLayout({
     faqHeading,
     faq,
     gallerySlug,
+    canonicalPath = "",
 }: ServicePageLayoutProps) {
+    const faqSchema = faq.length > 0 && canonicalPath ? getFaqSchema(faq, canonicalPath) : null;
     return (
         <main className="mx-auto max-w-3xl px-4 pb-16 pt-6 md:pt-10 sm:px-6 lg:px-8">
+            {faqSchema && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                />
+            )}
             <h1 className="text-4xl font-bold text-zinc-900">{title}</h1>
             <div className="mt-4 space-y-4 text-base [&_p]:leading-relaxed [&_p]:text-zinc-700 [&_ul]:list-inside [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:text-zinc-700 [&_ol]:list-inside [&_ol]:list-decimal [&_ol]:space-y-2 [&_ol]:text-zinc-700">
                 {intro}

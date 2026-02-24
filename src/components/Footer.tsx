@@ -33,6 +33,14 @@ export default function Footer() {
                             Usluge
                         </h4>
                         <ul className="mt-4 space-y-3">
+                            <li>
+                                <Link
+                                    href="/usluge"
+                                    className="text-base font-medium text-zinc-300 transition hover:text-white hover:underline"
+                                >
+                                    Sve usluge
+                                </Link>
+                            </li>
                             {FOOTER_USLUGE.map(({ slug, label }) => (
                                 <li key={slug}>
                                     <Link

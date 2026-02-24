@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const nav = [
-    { href: "/#usluge", label: "Usluge" },
+const navItems = (isHome: boolean) => [
+    { href: isHome ? "/#usluge" : "/usluge", label: "Usluge" },
     { href: "/#o-nama", label: "O nama" },
     { href: "/#specifikacije", label: "Specifikacije" },
     { href: "/#galerija", label: "Galerija" },
@@ -62,7 +62,7 @@ export default function Header() {
                                     </Link>
                                 </li>
                             )}
-                            {nav.map(({ href, label }) => (
+                            {navItems(isHome).map(({ href, label }) => (
                                 <li key={href}>
                                     <Link
                                         href={href}
@@ -134,7 +134,7 @@ export default function Header() {
                                 Početna
                             </Link>
                         )}
-                        {nav.map(({ href, label }) => (
+                        {navItems(isHome).map(({ href, label }) => (
                             <Link
                                 key={href}
                                 href={href}
