@@ -1,10 +1,10 @@
 ---
-title: Američki frižider ne stane
-meta_title: Američki frižider ne stane kroz vrata? Sigurno dizanje na kat u Zagrebu
+title: "Američki frižider ne stane kroz vrata u Zagrebu"
+meta_title: "Američki frižider ne stane kroz vrata - dizanje u Zagrebu i okolici"
 slug: americki-frizider-ne-stane
 date: "2023-10-15"
 excerpt: Kako unijeti američki frižider u stan kada nema mjesta u liftu? Dizanje hladnjaka kranom preko balkona – sigurno i brzo u Zagrebu.
-image: "/images/korisni-tekstovi/americki-frizider-ne-stane.jpg"
+image: "/images/korisni-tekstovi/americki-frizider-ne-stane-zagreb-i-okolica.jpg"
 image_alt: "Dizanje američkog frižidera kranom na kat – Kranex prijevozi Zagreb"
 keywords: [dizanje frižidera na kat, unos velikog frižidera u stan, frižider ne stane kroz vrata, podizanje hladnjaka kranom, selidba bijele tehnike bez lifta]
 ---

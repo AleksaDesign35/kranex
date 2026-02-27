@@ -1,10 +1,10 @@
 ---
-title: Dizanje krovne građe
-meta_title: Kako sigurno i učinkovito izvršiti dizanje crijepa na krov
+title: "Dizanje crijepa i krovne građe na krov u Zagrebu"
+meta_title: "Dizanje crijepa i krovne građe na krov - Zagreb i okolica"
 slug: dizanje-crijepa-na-krov
 date: "2023-10-21"
 excerpt: Kako sigurno i učinkovito podići crijep i krovnu građu na krov. Savjeti za pripremu, opcije rješenja i kada angažirati kamion s kranom.
-image: "/images/korisni-tekstovi/dizanje-crijepa-na-krov.jpg"
+image: "/images/korisni-tekstovi/dizanje-crijepa-na-krov-zagreb-i-okolica.jpg"
 image_alt: "Dizanje crijepa na krov Zagreb – Kranex kamion s kranom podiže paletu crijepa na krov"
 keywords: [dizanje crijepa na krov, dostava krovne građe na krov, podizanje paleta crijepa, kamion s kranom za krov]
 ---

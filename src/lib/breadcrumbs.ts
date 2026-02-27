@@ -55,6 +55,15 @@ export const BREADCRUMB_LABELS: Record<string, string> = {
     "/korisni-tekstovi/dostava-plocica-na-kat-zagreb": "Dostava pločica bez lifta",
     "/korisni-tekstovi/dostava-solarnih-panela-na-krov": "Solarni paneli",
     "/korisni-tekstovi/dozvola-za-zatvaranje-ulice-zagreb": "Zatvaranje ulice Zagreb",
+    "/korisni-tekstovi/istovar-zemlje-preko-ograde": "Ubacivanje zemlje preko ograde",
+    "/korisni-tekstovi/izvlacenje-stroja-iz-blata": "Izvlačenje stroja iz blata",
+    "/korisni-tekstovi/kako-unijeti-klavir-u-stan": "Kako unijeti klavir u stan",
+    "/korisni-tekstovi/koliko-prostora-treba-kamion-s-kranom": "Koliko prostora treba kamion s kranom",
+    "/korisni-tekstovi/kutna-garnitura-ne-stane-kroz-vrata": "Kutna garnitura ne stane kroz vrata",
+    "/korisni-tekstovi/montaza-reklamnog-panoa-kranom": "Montaža reklamnog panoa kranom",
+    "/korisni-tekstovi/nosenje-knaufa-na-kat": "Nošenje knaufa na 4. kat",
+    "/korisni-tekstovi/odvoz-gradevinske-sute-zagreb": "Spuštanje šute s visokih katova",
+    "/korisni-tekstovi/postavljanje-kontejnera-kranom": "Kontejner",
 };
 
 const IS_SERVICE_PAGE = new Set(

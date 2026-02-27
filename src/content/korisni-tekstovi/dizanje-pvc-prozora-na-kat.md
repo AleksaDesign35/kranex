@@ -1,10 +1,10 @@
 ---
-title: Zatvaranje lođe – podizanje prozora
-meta_title: Kako riješiti podizanje PVC prozora na kat za zatvaranje lođe
+title: "Podizanje PVC prozora na kat u Zagrebu"
+meta_title: "Podizanje PVC prozora na kat za zatvaranje lođe - Zagreb i okolica"
 slug: dizanje-pvc-prozora-na-kat
 date: "2023-11-01"
 excerpt: Kako sigurno podići PVC i aluminijske prozore na kat za zatvaranje lođe. Kamion s kranom, dizanje preko balkona i savjeti za pripremu u Zagrebu.
-image: "/images/korisni-tekstovi/dizanje-pvc-prozora-na-kat.png"
+image: "/images/korisni-tekstovi/dizanje-pvc-prozora-na-kat-zagreb-i-okolica.png"
 image_alt: "Zatvaranje lođe – podizanje prozora kranom, Kranex Prijevozi"
 keywords: [dizanje pvc prozora na kat, podizanje alu prozora kranom, montaža stolarije na visini, dostava prozora bez lifta]
 ---

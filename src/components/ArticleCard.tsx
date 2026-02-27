@@ -17,12 +17,12 @@ type Props = { slug: string; meta: KorisniTekstMeta };
 export default function ArticleCard({ slug, meta }: Props) {
     const href = `/korisni-tekstovi/${slug}`;
     return (
-        <li className="flex h-full">
+        <li className="flex h-full w-full">
             <Link
                 href={href}
-                className="group flex h-full flex-col overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-sm transition hover:border-primary hover:shadow-md"
+                className="group flex h-full w-full min-h-[420px] flex-col overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-sm transition hover:border-primary hover:shadow-md"
             >
-                <div className="relative aspect-[4/3] w-full shrink-0 bg-zinc-100">
+                <div className="relative h-62 w-full shrink-0 bg-zinc-100 sm:h-76 object-cover">
                     {meta.image ? (
                         <Image
                             src={meta.image}

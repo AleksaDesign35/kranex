@@ -1,10 +1,10 @@
 ---
-title: Solarni paneli
-meta_title: Kako osigurati sigurnu dostavu solarnih panela na krov
+title: "Dostava solarnih panela na krov u Zagrebu"
+meta_title: "Dostava solarnih panela na krov - Zagreb i okolica"
 slug: dostava-solarnih-panela-na-krov
 date: "2023-11-01"
 excerpt: Kako sigurno dostaviti solarne panele na krov. Kamion s kranom, priprema terena i savjeti za odabir prijevoznika u Zagrebu.
-image: "/images/korisni-tekstovi/dostava-solarnih-panela-na-krov.png"
+image: "/images/korisni-tekstovi/dostava-solarnih-panela-na-krov-zagreb-i-okolica.png"
 image_alt: "Kranex kamion s kranom diže solarne panele na krov kuće"
 keywords: [dostava solarnih panela na krov, dizanje opreme za solare, podizanje panela kranom, kamion s kranom Zagreb]
 ---

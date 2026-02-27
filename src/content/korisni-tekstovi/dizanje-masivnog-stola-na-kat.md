@@ -1,10 +1,10 @@
 ---
-title: Masivni stolovi (epoxy, puno drvo) – Kako podići na kat
-meta_title: Dizanje masivnog stola na kat | Kranex Zagreb
+title: "Dizanje masivnog stola na kat u Zagrebu"
+meta_title: "Dizanje masivnog stola na kat - Zagreb i okolica"
 slug: dizanje-masivnog-stola-na-kat
 date: "2023-10-31"
 excerpt: Kako sigurno podići masivni stol od punog drveta ili epoxy na kat. Opcije dizanja kranom, priprema i odabir prijevoznika u Zagrebu.
-image: "/images/korisni-tekstovi/masivni-stolovi-na-kat.jpg"
+image: "/images/korisni-tekstovi/dizanje-masivnog-stola-na-kat-zagreb-i-okolica.jpg"
 image_alt: "Dizanje masivnog stola na kat – Kranex kamion s kranom Zagreb"
 keywords: [dizanje masivnog stola na kat, dostava epoxy stola zagreb, podizanje teškog namještaja, unos velikog stola bez lifta]
 ---

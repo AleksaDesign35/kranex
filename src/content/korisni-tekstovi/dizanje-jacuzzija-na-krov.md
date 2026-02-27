@@ -1,10 +1,10 @@
 ---
-title: Jacuzzi na krov – Kako sigurno i učinkovito postaviti jacuzzi na visine
-meta_title: Sigurno dizanje jacuzzija na krov – Praktični savjeti i koraci
+title: "Dizanje jacuzzija na krov u Zagrebu i okolici"
+meta_title: "Dizanje jacuzzija na krov - sigurno podizanje u Zagrebu i okolici"
 slug: dizanje-jacuzzija-na-krov
 date: "2023-10-25"
 excerpt: Kako sigurno postaviti jacuzzi na krov ili terasu. Savjeti za pripremu, opcije dizanja kranom i odabir prijevoznika.
-image: "/images/korisni-tekstovi/dizanje-jacuzzija-na-krov.jpg"
+image: "/images/korisni-tekstovi/dizanje-jacuzzija-na-krov-zagreb-i-okolica.jpg"
 image_alt: "Dizanje jacuzzija na krov – Kranex kamion s kranom postavlja jacuzzi na terasu"
 keywords: [dizanje jacuzzija na krov, postavljanje bazena na terasu, podizanje spa bazena kranom, jacuzzi na penthouse]
 ---

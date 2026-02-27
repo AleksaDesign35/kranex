@@ -1,10 +1,10 @@
 ---
-title: Staklene stijene
-meta_title: Savjeti za dizanje staklene stijene na kat
+title: "Dizanje staklene stijene na kat u Zagrebu"
+meta_title: "Dizanje staklene stijene na kat - Zagreb i okolica"
 slug: dizanje-staklene-stijene
 date: "2023-10-14"
 excerpt: Kako sigurno podići staklenu stijenu na kat. Kamion s kranom, dizanje preko balkona, priprema i savjeti za montažu u Zagrebu.
-image: "/images/korisni-tekstovi/dizanje-staklene-stijene.png"
+image: "/images/korisni-tekstovi/dizanje-staklene-stijene-zagreb-i-okolica.png"
 image_alt: "Kranex kamion s kranom diže veliku staklenu stijenu na balkon stambene zgrade uz pomoć radnika"
 keywords: [dizanje staklene stijene, podizanje panoramskog prozora, unos velikog stakla na kat, montaža staklene stijene kranom]
 ---

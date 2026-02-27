@@ -1,10 +1,10 @@
 ---
-title: Dostava pločica bez lifta
-meta_title: Kako organizirati dostavu pločica na kat bez lifta u Zagrebu
+title: "Dostava pločica na kat bez lifta u Zagrebu"
+meta_title: "Dostava pločica na kat bez lifta - Zagreb i okolica"
 slug: dostava-plocica-na-kat-zagreb
 date: "2023-11-15"
 excerpt: Kako dostaviti pločice i ljepilo na kat bez lifta. Dizanje kranom, ručno nošenje i savjeti za pripremu u Zagrebu.
-image: "/images/korisni-tekstovi/dostava-plocica-na-kat-zagreb.png"
+image: "/images/korisni-tekstovi/dostava-plocica-na-kat-zagreb-i-okolica.png"
 image_alt: "Kranex kamion s kranom diže paletu pločica i ljepila na balkon u Zagrebu"
 keywords: [dostava pločica na kat zagreb, dizanje pločica kranom, nošenje vreća ljepila na kat, dostava građevinskog materijala bez lifta]
 ---

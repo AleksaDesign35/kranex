@@ -1,10 +1,10 @@
 ---
-title: Kuhinjski otoci od kamena – Kako riješiti problem transporta i montaže
-meta_title: Dizanje kuhinjskog otoka u Zagrebu – Savjeti i Rješenja
+title: "Dizanje kuhinjskog otoka od kamena u Zagrebu"
+meta_title: "Dizanje kuhinjskog otoka od kamena - Zagreb i okolica"
 slug: dizanje-kuhinjskog-otoka-zagreb
 date: "2023-10-20"
 excerpt: Kako transportirati i montirati kuhinjski otok od kamena. Opcije dizanja kranom, priprema i savjeti za siguran unos u Zagreb.
-image: "/images/korisni-tekstovi/dizanje-kuhinjskog-otoka-zagreb.jpg"
+image: "/images/korisni-tekstovi/dizanje-kuhinjskog-otoka-zagreb-i-okolica.jpg"
 image_alt: "Dizanje kuhinjskog otoka od kamena kranom – Kranex Zagreb"
 keywords: [dizanje kuhinjskog otoka zagreb, podizanje kamenog otoka kranom, dostava mramorne ploče na kat, unos granitne ploče u stan]
 ---

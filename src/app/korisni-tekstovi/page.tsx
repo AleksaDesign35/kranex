@@ -3,9 +3,9 @@ import { getAllTekstoviMeta } from "@/lib/korisni-tekstovi";
 import ArticleCard from "@/components/ArticleCard";
 
 export const metadata: Metadata = {
-    title: "Korisni tekstovi | Savjeti za prijevoz i dizanje tereta | Kranex",
+    title: "Korisni tekstovi - Prijevoz i dizanje | Zagreb i okolica | Kranex",
     description:
-        "Korisni članci i savjeti o prijevozu građevinskog materijala, kamionu s kranom, istovaru bez viljuškara i dizanju tereta u Zagrebu.",
+        "Korisni članci i savjeti o prijevozu, dizanju tereta i kamionu s kranom za Zagreb i okolicu. Upute za gradilišta, stanove i posebne transporte.",
     alternates: { canonical: "/korisni-tekstovi" },
 };
 
@@ -17,7 +17,7 @@ export default function KorisniTekstoviPage() {
             <p className="mt-4 text-base leading-relaxed text-zinc-700">
                 Savjeti i korisne informacije o prijevozu tereta, kamionu s kranom, istovaru na gradilištu i dizanju tereta u Zagrebu i okolici.
             </p>
-            <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="mt-10 grid auto-rows-fr gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {tekstovi.map(({ slug, meta }) => (
                     <ArticleCard key={slug} slug={slug} meta={meta} />
                 ))}
