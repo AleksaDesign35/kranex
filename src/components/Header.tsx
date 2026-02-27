@@ -6,13 +6,19 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const navItems = (isHome: boolean) => [
-    { href: "/usluge", label: "Usluge" },
-    { href: "/korisni-tekstovi", label: "Korisni tekstovi" },
-    { href: "/#o-nama", label: "O nama" },
-    { href: "/#specifikacije", label: "Specifikacije" },
-    { href: "/#galerija", label: "Galerija" },
-];
+const navItems = (isHome: boolean) =>
+    isHome
+        ? [
+            { href: "/usluge", label: "Usluge" },
+            { href: "/korisni-tekstovi", label: "Korisni tekstovi" },
+            { href: "/#o-nama", label: "O nama" },
+            { href: "/#specifikacije", label: "Specifikacije" },
+            { href: "/#galerija", label: "Galerija" },
+        ]
+        : [
+            { href: "/usluge", label: "Usluge" },
+            { href: "/korisni-tekstovi", label: "Korisni tekstovi" },
+        ];
 
 export default function Header() {
     const pathname = usePathname();

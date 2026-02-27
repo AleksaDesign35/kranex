@@ -5,6 +5,8 @@ slug: odvoz-gradevinske-sute-zagreb
 date: "2023-10-05"
 excerpt: Spuštanje šute s visokih katova u Zagrebu - kontejner, cijevi bez prašine i kamion s kranom za brži i sigurniji odvoz.
 keywords: [odvoz građevinske šute zagreb, spuštanje šute bez prašine, uklanjanje šute s kata, kontejner za šutu zagreb]
+image: "/images/korisni-tekstovi/odvoz-gradevinske-sute-zagreb-i-okolica.png"
+image_alt: "Spuštanje građevinske šute s visokih katova u Zagrebu - Kranex kamion s kranom"
 ---
 
 # Spuštanje šute s visokih katova
