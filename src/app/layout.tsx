@@ -42,14 +42,14 @@ export const metadata: Metadata = {
         description:
             "Kamion s kranom Zagreb za prijevoz tereta, građevinskog materijala i dizanje tereta. Brz dolazak, siguran transport i fleksibilni termini.",
         url: BASE_URL,
-        images: [{ url: `${BASE_URL}/og-image.png`, width: 1200, height: 630 }],
+        images: [{ url: `${BASE_URL}/images/kamion-s-kranom-zagreb-prijevoz-tereta-i-dizanje-tereta-kranex-prijevozi.png`, width: 1200, height: 630 }],
     },
     twitter: {
-        card: "summary",
+        card: "summary_large_image",
         title: "Kamion s kranom Zagreb | Prijevoz tereta i dizanje tereta | Kranex prijevozi",
         description:
             "Kamion s kranom Zagreb za prijevoz tereta, građevinskog materijala i dizanje tereta. Brz dolazak, siguran transport i fleksibilni termini.",
-        images: [`${BASE_URL}/og-image.png`],
+        images: [`${BASE_URL}/images/kamion-s-kranom-zagreb-prijevoz-tereta-i-dizanje-tereta-kranex-prijevozi.png`],
     },
 };
 
