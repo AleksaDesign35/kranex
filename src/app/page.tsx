@@ -6,6 +6,7 @@ import {
     ONamaSection,
     SpecifikacijeSection,
     GallerySection,
+    RecenzijeSection,
     FaqSection,
     KontaktSection,
 } from "@/components/home";
@@ -25,6 +26,7 @@ export default function Home() {
             <ONamaSection />
             <SpecifikacijeSection />
             <GallerySection />
+            <RecenzijeSection />
             <FaqSection />
             <KontaktSection />
         </main>
