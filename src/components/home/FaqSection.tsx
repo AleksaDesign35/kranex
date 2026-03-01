@@ -3,7 +3,7 @@ import { ChevronDown } from "lucide-react";
 const FAQ = [
     {
         q: "Kolika je cijena prijevoza građevinskog materijala u Zagrebu?",
-        a: "Cijena ovisi o udaljenosti, težini i vremenu rada krana.",
+        a: "Utovar i istovar kranom iznosi 50 EUR po satu uz minimalni obračun od 1 sata. Dodatno vrijeme na gradilištu naplaćuje se 50 EUR po započetom satu, dodatni radnik 15 EUR po satu, a čekanje na lokaciji 30 EUR po satu ako nije unaprijed dogovoreno. Za duge relacije preko 150 km cijena je od 1,50 EUR do 3,00 EUR po kilometru uz dodatnu naplatu cestarina, dok lokalne vožnje po Zagrebu kreću od 150 EUR. Konačna cijena ovisi o težini tereta, visini i udaljenosti dizanja te lokaciji utovara i istovara.",
     },
     {
         q: "Da li vršite utovar i istovar kranom?",
