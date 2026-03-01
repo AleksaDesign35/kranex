@@ -8,6 +8,7 @@ import MapSection from "@/components/MapSection";
 import FloatingCallButton from "@/components/FloatingCallButton";
 import CookieBanner from "@/components/CookieBanner";
 import GtagWithConsent from "@/components/GtagWithConsent";
+import PhoneLeadTracker from "@/components/PhoneLeadTracker";
 import { getSchemaGraph } from "@/lib/schema";
 import { GA_MEASUREMENT_ID } from "@/lib/gtag";
 
@@ -74,6 +75,7 @@ export default function RootLayout({
                     src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
                 />
                 <GtagWithConsent />
+                <PhoneLeadTracker />
                 <Header />
                 <Breadcrumbs />
                 {children}

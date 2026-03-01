@@ -63,3 +63,10 @@ export function denyConsent() {
     const gtag = getGtag();
     if (gtag) gtag("consent", "update", CONSENT_DENIED);
 }
+
+type GtagEventParams = Record<string, string | number | boolean | undefined>;
+
+export function trackEvent(eventName: string, params: GtagEventParams = {}) {
+    const gtag = getGtag();
+    if (gtag) gtag("event", eventName, params);
+}
